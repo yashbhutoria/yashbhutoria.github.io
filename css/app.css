@@ -5731,7 +5731,7 @@ th.hide-for-touch {
 
 /* line 479, ../bower_components/font-awesome/scss/_icons.scss */
 .fa-codepen:before {
-  content: "\f1cb";
+  content: "\f08c";
 }
 
 /* line 480, ../bower_components/font-awesome/scss/_icons.scss */
@@ -6210,9 +6210,9 @@ a.link-text:hover {
 }
 /* line 141, ../scss/_custom.scss */
 .bio img {
-  -moz-border-radius: 150px;
-  -webkit-border-radius: 150px;
-  border-radius: 150px;
+  -moz-border-radius: 250px;
+  -webkit-border-radius: 250px;
+  border-radius: 250px;
   display: block;
   margin: auto;
 }
