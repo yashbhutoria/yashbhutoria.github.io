@@ -6281,7 +6281,7 @@ a.link-text:hover {
   text-align: center;
   white-space: nowrap;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 @media only screen and (min-width: 64.063em) {
@@ -6293,7 +6293,7 @@ a.link-text:hover {
 /* line 209, ../scss/_custom.scss */
 .navigation nav ul li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 10px;
   padding: 0;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -6365,4 +6365,18 @@ footer {
   position: fixed;
   width: 100%;
   text-align: center;
+}
+
+#skills h2 {
+  display: block;
+}
+
+.topLayer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.topLayer > * {
+  flex: 1 1 50%;
 }

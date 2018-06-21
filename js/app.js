@@ -303,20 +303,28 @@ skills.display = function() {
 
 	var formattedSkillsHeader = HTMLskillsHeader.replace("%data%", skills.header);
 	$("#skills").append(formattedSkillsHeader);
+	var topLayer = document.createElement('div');
+	topLayer.setAttribute('class','topLayer');
+	topLayer.setAttribute('id',`yash_topLayer`);
+	$("#skills").append(topLayer);
+	var i = 0;
 
 	for(field in skills.fields) {
-
+		var container = document.createElement('div');
+		container.setAttribute('class','yash_style');
+		container.setAttribute('id',`yash_skills${i}`);
+		$("#yash_topLayer").append(container);
 		var formattedSubHeader = HTMLskillsSubHeader.replace("%data%", skills.fields[field].field)
-		$("#skills").append(formattedSubHeader);
+		$(`#yash_skills${i}`).append(formattedSubHeader);
 
 		var formattedSkillsList = HTMLskillsList.replace("%data%", field);
-		$("#skills").append(formattedSkillsList);
+		$(`#yash_skills${i}`).append(formattedSkillsList);
 
 		for (skill in skills.fields[field].skills) {
 			var formattedSkillsItem = HTMLskillsItem.replace("%data%", skills.fields[field].skills[skill]);
 			$('#skillsList' + field).append(formattedSkillsItem);
 		}
-
+		i++;
 	}
 
 }();
