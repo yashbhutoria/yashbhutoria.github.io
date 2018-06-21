@@ -6210,9 +6210,11 @@ a.link-text:hover {
 }
 /* line 141, ../scss/_custom.scss */
 .bio img {
-  -moz-border-radius: 250px;
-  -webkit-border-radius: 250px;
-  border-radius: 250px;
+  width: 230px;
+  height: 230px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   display: block;
   margin: auto;
 }
