@@ -6,7 +6,8 @@ var bio = {
 	"name": "Yash Bhutoria",
 	"role": "Associate Data Engineer",
 	"location": "Jaipur India",
-	"bioPic": "img/profile.jpg"
+	"bioPic": "img/profile.jpg",
+	"email": "yash222219@gmail.com",
 }
 
 var skills = {
@@ -64,7 +65,6 @@ var navigation = {
 }
 
 var contacts = {
-	"email": "yash222219@gmail.com",
 	"github": "yashbhutoria",
 	"instagram": "theyashbhutoria",
 	"linkedin":"yashbhutoria",
@@ -155,12 +155,13 @@ bio.display = function() {
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#bio").append(formattedRole);
 
+	var formattedEmail = HTMLemail.replace("%data%", bio.email).replace("%data%", bio.email);
+	$("#bio").append(formattedEmail);
+
 }();
 
 contacts.display = function() {
 
-	var formattedEmail = HTMLemail.replace("%data%", contacts.email);
-	$("#leftContent").append(formattedEmail);
 
 	var formattedGithub = HTMLgithub.replace("%data%", contacts.github);
 	$("#contacts").append(formattedGithub);

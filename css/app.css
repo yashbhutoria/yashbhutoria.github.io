@@ -6163,11 +6163,8 @@ a.link-text:hover {
   }
 }
 /* line 99, ../scss/_custom.scss */
-.left-content .email {
-  color: #f1f1f1;
-  display: none;
-  position: absolute;
-  bottom: 5rem;
+.email {
+  color: #ccc;
   width: 100%;
   margin: auto;
   text-align: center;
