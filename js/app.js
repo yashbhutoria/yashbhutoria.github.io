@@ -8,6 +8,7 @@ var bio = {
 	"location": "Jaipur India",
 	"bioPic": "img/profile.jpg",
 	"email": "yash222219@gmail.com",
+	"phone": "+919521878460"
 }
 
 var skills = {
@@ -80,7 +81,7 @@ var work = {
 			"title": "Associate Data Engineer",
 			"location": "Jaipur, India",
 			"dates": "2017 - Present",
-			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment"
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Resource Management "
 		},
 
 	]	
@@ -89,15 +90,51 @@ var work = {
 var projects = {
 	"header": "Projects",
 	"projects": [
-		// {
-		// 	"title": "Date Asia",
-		// 	"url": "https://date-asia.com/?skin=def_mobile",
-		// 	"dates": "2014 - Present",
-		// 	"description": "An in-progress responsive reboot of a personal project that I started in an attempt to improve my front-end development skills. I learn well by doing, and this project gives me a chance to put new skills I've gained into practice. An open source PHP dating script on the backend, Bootstrap 3 on the front end.",
-		// 	"images": [
-		// 	"img/dateAsia01.jpg", "img/dateAsia02.jpg", "img/dateAsia03.jpg"
-		// 	]			
-		// }
+		{
+			"title": "Dynamic Row Level Security Implementation",
+			"url": "",
+			"dates": "2017",
+			"description": "A tabular model deployed on SQL Server Analysis Server with DAX filters, so that a Power BI report shows data only what is permissible to a user viewing it as per decided visiblity.",
+			"images": [
+			""
+			]			
+		},
+		{
+			"title": "SAP Reporting",
+			"url": "",
+			"dates": "2017",
+			"description": "Reporting Service project using SSIS and Power BI on an SAP database.",
+			"images": [
+			""
+			]			
+		},
+		{
+			"title": "Attendance Calculator",
+			"url": "https://theattendancecalculator.000webhostapp.com/",
+			"dates": "2016",
+			"description": "A web app to show user how many classes one can bunk safely.",
+			"images": [
+			""
+			]			
+		},
+		{
+			"title": "Import Script Creator",
+			"url": "https://github.com/yashbhutoria/ImportScriptCreator",
+			"dates": "2018",
+			"description": "A python script that can produces create query for a table from using column headers of a .csv file and finding keywords",
+			"images": [
+			""
+			]			
+		},
+		{
+			"title": "The Yash Code",
+			"url": "https://github.com/yashbhutoria/TheYashCode",
+			"dates": "2017",
+			"description": "A piece java code to convert any number from any base to any other base and represents them using characters ",
+			"images": [
+			""
+			]			
+		}
 	]
 }
 
@@ -106,10 +143,10 @@ var education =  {
 	"formalHeader": "Formal",
 	"formalSchools": [
 		{
-			"school": "Poornima College of Engineering",
+			"school": "Poornima College of Engineering, Jaipur",
 			"qualification": "B.Tech",
 			"board":"Rajasthan Technical University",
-			"url": "pce.poornima.org",
+			"url": "http://pce.poornima.org",
 			"dates": "2019",
 			"grades":"66.67 %"
 		},
@@ -117,7 +154,7 @@ var education =  {
 			"school": "Jhunjhunu Academy",
 			"board":"CBSE",
 			"qualification": "Senior Secondary",
-			"url": "",
+			"url": "http://www.jhunjhunuacademy.org/",
 			"dates": "2015",
 			"grades":"89.80 %"
 		},
@@ -125,7 +162,7 @@ var education =  {
 			"school": "RDS Public School",
 			"board":"BSER",
 			"qualification": "Secondary",
-			"url": "",
+			"url": "http://rdspublicschool.org/",
 			"dates": "2013",
 			"grades":"82.00 %"
 		}
@@ -158,6 +195,8 @@ bio.display = function() {
 	var formattedEmail = HTMLemail.replace("%data%", bio.email).replace("%data%", bio.email);
 	$("#bio").append(formattedEmail);
 
+	var formattedPhone = HTMLphone.replace("%data%", bio.phone).replace("%data%", bio.phone);
+	$("#bio").append(formattedPhone);
 }();
 
 contacts.display = function() {
@@ -266,7 +305,7 @@ education.display = function() {
 	for(school in education.formalSchools) {
 		$("#education").append(HTMLformalStart);
 		
-		var formattedFormalSchool = HTMLformalSchool.replace("%data%", education.formalSchools[school].school);
+		var formattedFormalSchool = HTMLformalSchool.replace("%data%", education.formalSchools[school].school).replace("%url%", education.formalSchools[school].url);;
 		$(".formal-entry:last").append(formattedFormalSchool);
 
 		var formattedFormalBoard = HTMLformalBoard.replace("%data%", education.formalSchools[school].board);
