@@ -112,7 +112,7 @@ var projects = {
 			"title": "Attendance Calculator",
 			"url": "https://theattendancecalculator.000webhostapp.com/",
 			"dates": "2016",
-			"description": "A web app to show user how many classes one can bunk safely. It asks user for current attendance and then simulates the situation as per giver parameters.",
+			"description": "A web app to show user how many classes one can bunk safely. It asks user for current attendance and then simulates the situation as per given parameters.",
 			"images": [
 			""
 			]			
