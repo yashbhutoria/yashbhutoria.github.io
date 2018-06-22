@@ -24,7 +24,7 @@ var skills = {
 		},
 		{
 			"field": "Frameworks",
-			"skills": ["Hadoop 2","Hive","Pig"]
+			"skills": ["Hadoop 2","Hive","Pig","Sqoop"]
 		},
 		{
 			"field": "Databases",
