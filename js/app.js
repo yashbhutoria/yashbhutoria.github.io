@@ -103,7 +103,7 @@ var projects = {
 			"title": "SAP Reporting",
 			"url": "",
 			"dates": "2017",
-			"description": "Reporting Service project using SSIS and Power BI on an SAP database.",
+			"description": "Reporting Service project using SSIS and Power BI on an SAP database. Data pulled from SAP Table using Xtract IS and loaded to SQL Server. The data then used to create a Power BI Report",
 			"images": [
 			""
 			]			
@@ -112,7 +112,7 @@ var projects = {
 			"title": "Attendance Calculator",
 			"url": "https://theattendancecalculator.000webhostapp.com/",
 			"dates": "2016",
-			"description": "A web app to show user how many classes one can bunk safely.",
+			"description": "A web app to show user how many classes one can bunk safely. It asks user for current attendance and then simulates the situation as per giver parameters",
 			"images": [
 			""
 			]			
@@ -129,7 +129,7 @@ var projects = {
 		{
 			"title": "The Yash Code",
 			"url": "https://github.com/yashbhutoria/TheYashCode",
-			"dates": "2017",
+			"dates": "2016",
 			"description": "A piece java code to convert any number from any base to any other base and represents them using characters ",
 			"images": [
 			""
