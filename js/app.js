@@ -23,16 +23,20 @@ var skills = {
 			"skills": ["OpenCV", "Scikt-learn","Pandas","Numpy"]
 		},
 		{
+			"field": "Frameworks",
+			"skills": ["Hadoop 2","Hive","Pig"]
+		},
+		{
+			"field": "Databases",
+			"skills": ["SQL Server","MySQL","Hbase"]
+		},
+		{
 			"field": "Query Languages",
-			"skills": ["SQL", "HiveQL", "AzureSQL"]
+			"skills": ["SQL", "HiveQL", "AzureSQL","DAX","Pig Latin"]
 		},
 		{
 			"field": "Data Tools",
 			"skills": ["SQL Server Integration Services", "SQL Server Analysis Services", "Azure Analysis Services"]
-		},
-		{
-			"field": "Frameworks",
-			"skills": ["Hadoop 2"]
 		},
 		{
 			"field": "Cloud",
@@ -54,10 +58,6 @@ var skills = {
 			"field": "Version Control",
 			"skills": ["Git"]
 		},
-		{
-			"field": "Databases",
-			"skills": ["SQL Server","MySQL","Hive","Pig","Hbase"]
-		}
 	]
 }
 
@@ -281,14 +281,14 @@ projects.display = function() {
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
 
-		$(".project-entry:last").append(HTMLprojectImageStart);
+		// $(".project-entry:last").append(HTMLprojectImageStart);
 
-		if (projects.projects[project].images.length > 0) {
-			for(image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image])
-				$(".project-images:last").append(formattedImage);
-			}
-		}
+		// if (projects.projects[project].images.length > 0) {
+		// 	for(image in projects.projects[project].images) {
+		// 		var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image])
+		// 		$(".project-images:last").append(formattedImage);
+		// 	}
+		// }
 
 	}	
 
