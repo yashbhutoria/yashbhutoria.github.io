@@ -5,7 +5,7 @@
 https://github.com/mikejoyceio
 ````
 
-######Had help of
+##### Had help of
 ''''
 https://github.com/vipulbhj
 ''''
@@ -14,29 +14,7 @@ https://github.com/vipulbhj
 
 ###### Live
 
-Point your browser to http://resume.mikejoyce.io
-
-###### Local
-
-###### 1. Clone this repo
-
-```
-$ git clone https://github.com/mikejoyceio/resume
-````
-
-###### 2. Serve the application
-
-```
-$ python -m SimpleHTTPServer
-```
-
-Detailed Python Simple Server instructions can been found [here](https://docs.python.org/2/library/basehttpserver.html).
-
-###### 3. Open the application
-
-```
-$ open "http://localhost:8000"
-```
+Point your browser to http://yashbhutoria.com
 
 ## Resources
 
