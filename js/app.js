@@ -62,7 +62,7 @@ var skills = {
 }
 
 var navigation = {
-	"nav": ["work", "projects", "education", "skills"]
+	"nav": ["work","skills", "projects", "education" ]
 }
 
 var contacts = {
