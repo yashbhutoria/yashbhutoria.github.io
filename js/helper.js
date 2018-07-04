@@ -51,6 +51,7 @@ var HTMLskillsItem = "<li id=''>- %data%</li>";
 
 var HTMLemail = "<div class='email'><a href='mailto:%data%'>%data%</a></div>";
 var HTMLphone = "<div class='email'><a href='tel:%data%'>%data%</a></div>";
+var HTMLresume = "<div class='email'><a href='files/yash_bhutoria_resume.pdf'>Download Resume</a></div>";
 var HTMLgithub = "<div class='small-3 text-center column'><a href='https://github.com/%data%' target='_blank'><span class='fa fa-github-alt'></span></a></div>";
 var HTMLcodepen = "<div class='small-3 text-center column'><a href='https://www.linkedin.com/in/%data%' target='_blank'><span class='fa fa-codepen'></span></a></div>";
 var HTMLinstagram = "<div class='small-3 text-center column'><a href='https://instagram.com/%data%' target='_blank'><span class='fa fa-instagram'></span></a></div>";

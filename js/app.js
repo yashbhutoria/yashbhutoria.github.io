@@ -4,7 +4,7 @@
 
 var about = {
 	"header": "About",
-	"content":"A Data Enthusiast looking for opportunities in the field of Data Engineering and Data Science."
+	"content":"A data enthusiast, with experience in data integration, modelling and reporting in a startup company. Passionate and result-oriented. Learner and practitioner of the data analytics and data engineering."
 }
 
 var bio = {
@@ -210,6 +210,8 @@ bio.display = function() {
 
 	var formattedEmail = HTMLemail.replace("%data%", bio.email).replace("%data%", bio.email);
 	$("#bio").append(formattedEmail);
+
+	$("#bio").append(HTMLresume)
 
 	var formattedPhone = HTMLphone.replace("%data%", bio.phone).replace("%data%", bio.phone);
 	$("#bio").append(formattedPhone);
