@@ -6366,6 +6366,14 @@ footer {
   text-align: center;
 }
 
+.about { 
+	color: #657380;
+	font-family: $font-condensed;
+	font-weight: 300;
+	font-size: 1.3rem;
+	margin-bottom: 0;
+}
+
 #skills h2 {
   display: block;
 }

@@ -7,6 +7,9 @@ var HTMLnavigation = "<li><a role='button' id='link%id%'>%data%</a></li>";
 
 var HTMLlocation = "<li class='flex-item'><span class='orange-text'>location</span><span class='white-text'>%data%</span></li>";
 
+var HTMLaboutHeader ="<h2>%data%</h2>";
+var HTMLaboutContent ="<div class='content about'>%data%</div>";
+
 var HTMLworkHeader ="<h2>%data%</h2>";
 var HTMLworkStart = "<div class='work-entry content'></div>";
 var HTMLworkEmployer = "<a class='link-text' href='%url%' target='_blank'>%data%";

@@ -2,6 +2,11 @@
 
 // Objects
 
+var about = {
+	"header": "About",
+	"content":"A Data Enthusiast looking for opportunities in the field of Data Engineering and Data Science."
+}
+
 var bio = {
 	"name": "Yash Bhutoria",
 	"role": "Associate Data Engineer",
@@ -180,6 +185,17 @@ var education =  {
 }
 
 // Display Objects
+about.display = function() {
+
+	var formattedAboutHeader = HTMLaboutHeader.replace("%data%", about.header);
+	console.log(formattedAboutHeader);
+	$("#about").append(formattedAboutHeader);
+
+	var formattedContent = HTMLaboutContent.replace("%data%", about.content);
+	$("#about").append(formattedContent);	
+
+}();
+
 
 bio.display = function() {
 
