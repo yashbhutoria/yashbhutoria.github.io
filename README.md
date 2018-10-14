@@ -6,15 +6,15 @@ https://github.com/mikejoyceio
 ````
 
 ##### Had help of
-''''
+````
 https://github.com/vipulbhj
-''''
+````
 
 ## Getting Started
 
 ###### Live
 
-Point your browser to http://yashbhutoria.com
+Point your browser to https://yashbhutoria.com
 
 ## Resources
 
