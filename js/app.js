@@ -25,31 +25,27 @@ var skills = {
 		},
 		{
 			"field": "Libraries",
-			"skills": ["OpenCV", "Scikt-learn","Pandas","Numpy"]
-		},
-		{
-			"field": "Frameworks",
-			"skills": ["Hadoop 2","Hive","Pig","Sqoop"]
+			"skills": ["Pytorch","OpenCV", "Scikt-learn","Pandas","Numpy","Selenium"]
 		},
 		{
 			"field": "Databases",
-			"skills": ["SQL Server","MySQL","Hbase"]
+			"skills": ["SQL Server","MySQL"]
 		},
 		{
 			"field": "Query Languages",
-			"skills": ["SQL", "HiveQL", "AzureSQL","DAX","Pig Latin"]
+			"skills": ["SQL","DAX"]
 		},
 		{
 			"field": "Data Tools",
 			"skills": ["SQL Server Integration Services", "SQL Server Analysis Services", "Azure Analysis Services"]
 		},
 		{
-			"field": "Cloud",
-			"skills": ["Microsoft Azure"]
+			"field": "Cloud Tools",
+			"skills": ["Azure Logic Apps","Azure Functions"]
 		},
 		{
 			"field": "Reporting Tools",
-			"skills": ["Power BI", "Tibco Spotfire"]
+			"skills": ["Power BI"]
 		},
 		{
 			"field": "Project Domains",
@@ -60,8 +56,8 @@ var skills = {
 			"skills": ["Windows", "Linux"]
 		},
 		{
-			"field": "Version Control",
-			"skills": ["Git"]
+			"field": "Other tools",
+			"skills": ["Git","Docker"]
 		},
 	]
 }
