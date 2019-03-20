@@ -4,7 +4,7 @@
 
 var about = {
 	"header": "About",
-	"content":"A data enthusiast, with experience in data integration, modelling and reporting in a startup company. Passionate and result-oriented. Learner and practitioner of the data analytics and data engineering."
+	"content": "A learner, with experience in modern data integration and reporting in a startup company. Looking for opportunities to grow."
 }
 
 var bio = {
@@ -25,15 +25,15 @@ var skills = {
 		},
 		{
 			"field": "Libraries",
-			"skills": ["Pytorch","OpenCV", "Scikt-learn","Pandas","Numpy","Selenium"]
+			"skills": ["Pytorch", "OpenCV", "Scikt-learn", "Pandas", "Numpy"]
 		},
 		{
 			"field": "Databases",
-			"skills": ["SQL Server","MySQL"]
+			"skills": ["SQL Server", "MySQL"]
 		},
 		{
 			"field": "Query Languages",
-			"skills": ["SQL","DAX"]
+			"skills": ["SQL", "DAX"]
 		},
 		{
 			"field": "Data Tools",
@@ -41,7 +41,7 @@ var skills = {
 		},
 		{
 			"field": "Cloud Tools",
-			"skills": ["Azure Logic Apps","Azure Functions"]
+			"skills": ["Azure Logic Apps", "Azure Functions"]
 		},
 		{
 			"field": "Reporting Tools",
@@ -49,27 +49,27 @@ var skills = {
 		},
 		{
 			"field": "Project Domains",
-			"skills": ["Data Engineering","Machine Learning", "ETL", "Business Intelligence","Big Data"]
+			"skills": ["Data Engineering", "Machine Learning", "ETL", "Business Intelligence", "Serverless"]
 		},
 		{
-			"field": "Operating Systems",
-			"skills": ["Windows", "Linux"]
+			"field": "Frameworks",
+			"skills": ["Flask", "Django","Selenium"]
 		},
 		{
 			"field": "Other tools",
-			"skills": ["Git","Docker"]
+			"skills": ["Git", "Docker"]
 		},
 	]
 }
 
 var navigation = {
-	"nav": ["work","skills", "projects", "education" ]
+	"nav": ["work", "skills", "projects", "education"]
 }
 
 var contacts = {
 	"github": "yashbhutoria",
 	"instagram": "theyashbhutoria",
-	"linkedin":"yashbhutoria",
+	"linkedin": "yashbhutoria",
 	"twitter": "@theyashbhutoria"
 }
 
@@ -82,23 +82,50 @@ var work = {
 			"title": "Associate Data Engineer",
 			"location": "Jaipur, India",
 			"dates": "2017 - Present",
-			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Resource Management "
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		},
 
-	]	
+	]
 }
 
 var projects = {
 	"header": "Projects",
 	"projects": [
 		{
-			"title": "Dynamic Row Level Security Implementation",
+			"title": "Terraform Automation",
 			"url": "",
-			"dates": "2017",
-			"description": "A tabular model deployed on SQL Server Analysis Server with DAX filters, so that a Power BI report shows data only what is permissible to a user viewing it as per decided visiblity.",
+			"dates": "2019",
+			"description": "Created fully automated spoke deployment solution to deploy desired architecture on Azure Enterprise Cloud using Terraform templates and Flask UI",
 			"images": [
-			""
-			]			
+				""
+			]
+		},
+		{
+			"title": "Hate Speech Detection and Twitter Integration",
+			"url": "",
+			"dates": "2019",
+			"description": "A Web Based Tool and REST API that detects hate speech and offensive language using Logistic Regression on Twitter data fetched from APIs",
+			"images": [
+				""
+			]
+		},
+		{
+			"title": "Serverless Data Pipelines",
+			"url": "",
+			"dates": "2018",
+			"description": "Data integration project based on Azure Functions and Azure Logic App to schedule and automate data pipelines along with some transformation",
+			"images": [
+				""
+			]
+		},
+		{
+			"title": "Azure OMS to ServiceNow Automation Solution",
+			"url": "",
+			"dates": "2018",
+			"description": "Automated the creation of Incidents on SNOW, creating Azure Logic App and Azure Function App, from the process of alert generation to ticket generation",
+			"images": [
+				""
+			]
 		},
 		{
 			"title": "SAP Reporting",
@@ -106,66 +133,48 @@ var projects = {
 			"dates": "2017",
 			"description": "Reporting Service project using SSIS and Power BI on an SAP database. Data pulled from SAP Table using Xtract IS and loaded to SQL Server. The data then used to create a Power BI Report.",
 			"images": [
-			""
-			]			
+				""
+			]
 		},
 		{
-			"title": "Attendance Calculator",
-			"url": "https://theattendancecalculator.000webhostapp.com/",
-			"dates": "2016",
-			"description": "A web app to show user how many classes one can bunk safely. It asks user for current attendance and then simulates the situation as per given parameters.",
+			"title": "Dynamic Row Level Security Implementation",
+			"url": "",
+			"dates": "2017",
+			"description": "A tabular model deployed on SQL Server Analysis Server with DAX filters, so that a Power BI report shows data only what is permissible to a user viewing it as per decided visiblity.",
 			"images": [
-			""
-			]			
-		},
-		{
-			"title": "Import Script Creator",
-			"url": "https://github.com/yashbhutoria/ImportScriptCreator",
-			"dates": "2018",
-			"description": "A python script that can produces create query for a table from using column headers of a .csv file and finding keywords.",
-			"images": [
-			""
-			]			
-		},
-		{
-			"title": "The Yash Code",
-			"url": "https://github.com/yashbhutoria/TheYashCode",
-			"dates": "2016",
-			"description": "A piece java code to convert any number from any base to any other base and represents them using characters.",
-			"images": [
-			""
-			]			
+				""
+			]
 		}
 	]
 }
 
-var education =  {
+var education = {
 	"educationHeader": "Education",
 	"formalHeader": "Formal",
 	"formalSchools": [
 		{
 			"school": "Poornima College of Engineering, Jaipur",
 			"qualification": "B.Tech",
-			"board":"Rajasthan Technical University",
+			"board": "Rajasthan Technical University",
 			"url": "http://pce.poornima.org",
 			"dates": "2019",
-			"grades":"66.67 %"
+			"grades": "65.37 %"
 		},
 		{
 			"school": "Jhunjhunu Academy",
-			"board":"CBSE",
+			"board": "CBSE",
 			"qualification": "Senior Secondary",
 			"url": "http://www.jhunjhunuacademy.org/",
 			"dates": "2015",
-			"grades":"89.80 %"
+			"grades": "89.80 %"
 		},
 		{
 			"school": "RDS Public School",
-			"board":"BSER",
+			"board": "BSER",
 			"qualification": "Secondary",
 			"url": "http://rdspublicschool.org/",
 			"dates": "2013",
-			"grades":"82.00 %"
+			"grades": "82.00 %"
 		}
 	],
 	"onlineHeader": "Online Eduction",
@@ -181,19 +190,19 @@ var education =  {
 }
 
 // Display Objects
-about.display = function() {
+about.display = function () {
 
 	var formattedAboutHeader = HTMLaboutHeader.replace("%data%", about.header);
 	console.log(formattedAboutHeader);
 	$("#about").append(formattedAboutHeader);
 
 	var formattedContent = HTMLaboutContent.replace("%data%", about.content);
-	$("#about").append(formattedContent);	
+	$("#about").append(formattedContent);
 
 }();
 
 
-bio.display = function() {
+bio.display = function () {
 
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 	$("#bio").append(formattedBioPic);
@@ -213,7 +222,7 @@ bio.display = function() {
 	$("#bio").append(formattedPhone);
 }();
 
-contacts.display = function() {
+contacts.display = function () {
 
 
 	var formattedGithub = HTMLgithub.replace("%data%", contacts.github);
@@ -230,9 +239,9 @@ contacts.display = function() {
 
 }();
 
-navigation.display = function() {
+navigation.display = function () {
 
-	for(nav in navigation.nav) {
+	for (nav in navigation.nav) {
 		var formattedNavigation = HTMLnavigation.replace("%data%", navigation.nav[nav]).replace("%id%", navigation.nav[nav]);
 		$("#nav").append(formattedNavigation);
 
@@ -240,23 +249,23 @@ navigation.display = function() {
 	}
 
 	function anchorScroll(target) {
-		$("#link"+target).on("click", function() {
-				$("#"+target).children("h2").removeClass("pop");
-	    	$('html,body').animate({
-	        	scrollTop: $("#"+target).offset().top
-	    	}, 1000, function() {
-	    	});
-	    });
+		$("#link" + target).on("click", function () {
+			$("#" + target).children("h2").removeClass("pop");
+			$('html,body').animate({
+				scrollTop: $("#" + target).offset().top
+			}, 1000, function () {
+			});
+		});
 	}
 
 }();
 
-work.display = function() {
+work.display = function () {
 
 	var formattedWorkHeader = HTMLworkHeader.replace("%data%", work.header);
 	$("#work").append(formattedWorkHeader);
 
-	for(job in work.jobs) {
+	for (job in work.jobs) {
 
 		$("#work").append(HTMLworkStart);
 
@@ -278,12 +287,12 @@ work.display = function() {
 
 }();
 
-projects.display = function() {
+projects.display = function () {
 
 	var formattedProjectsHeader = HTMLprojectsHeader.replace("%data%", projects.header);
 	$("#projects").append(formattedProjectsHeader);
 
-	for(project in projects.projects) {
+	for (project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title).replace("%url%", projects.projects[project].url);
@@ -304,11 +313,11 @@ projects.display = function() {
 		// 	}
 		// }
 
-	}	
+	}
 
 }();
 
-education.display = function() {
+education.display = function () {
 
 	var formattedEducationHeader = HTMLeducationHeader.replace("%data%", education.educationHeader);
 	$("#education").append(formattedEducationHeader);
@@ -316,9 +325,9 @@ education.display = function() {
 	var formattedFormalHeader = HTMLformalHeader.replace("%data%", education.formalHeader);
 	$("#education").append(formattedFormalHeader);
 
-	for(school in education.formalSchools) {
+	for (school in education.formalSchools) {
 		$("#education").append(HTMLformalStart);
-		
+
 		var formattedFormalSchool = HTMLformalSchool.replace("%data%", education.formalSchools[school].school).replace("%url%", education.formalSchools[school].url);;
 		$(".formal-entry:last").append(formattedFormalSchool);
 
@@ -340,7 +349,7 @@ education.display = function() {
 
 	// for(school in education.onlineSchools) {
 	// 	$("#education").append(HTMLonlineStart);
-		
+
 	// 	var formattedOnlineCourse = HTMLonlineCourse.replace("%data%", education.onlineSchools[school].course).replace("%url%", education.onlineSchools[school].url);
 	// 	$(".online-entry:last").append(formattedOnlineCourse);
 
@@ -353,20 +362,20 @@ education.display = function() {
 
 }();
 
-skills.display = function() {
+skills.display = function () {
 
 	var formattedSkillsHeader = HTMLskillsHeader.replace("%data%", skills.header);
 	$("#skills").append(formattedSkillsHeader);
 	var topLayer = document.createElement('div');
-	topLayer.setAttribute('class','topLayer');
-	topLayer.setAttribute('id',`yash_topLayer`);
+	topLayer.setAttribute('class', 'topLayer');
+	topLayer.setAttribute('id', `yash_topLayer`);
 	$("#skills").append(topLayer);
 	var i = 0;
 
-	for(field in skills.fields) {
+	for (field in skills.fields) {
 		var container = document.createElement('div');
-		container.setAttribute('class','yash_style');
-		container.setAttribute('id',`yash_skills${i}`);
+		container.setAttribute('class', 'yash_style');
+		container.setAttribute('id', `yash_skills${i}`);
 		$("#yash_topLayer").append(container);
 		var formattedSubHeader = HTMLskillsSubHeader.replace("%data%", skills.fields[field].field)
 		$(`#yash_skills${i}`).append(formattedSubHeader);
