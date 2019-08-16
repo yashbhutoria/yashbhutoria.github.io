@@ -4,15 +4,15 @@
 
 var about = {
 	"header": "About",
-	"content": "A learner, with experience in modern data integration and reporting in a startup company. Looking for opportunities to grow."
+	"content": "Data Engineering, Machine Learning and Azure PaaS"
 }
 
 var bio = {
 	"name": "Yash Bhutoria",
-	"role": "Associate Data Engineer",
+	"role": "Data Engineer",
 	"location": "Jaipur India",
 	"bioPic": "img/profile.jpg",
-	"email": "yash222219@gmail.com",
+	"email": "yash.bhutoria@celebaltech.com",
 	"phone": "+919521878460"
 }
 
@@ -79,12 +79,19 @@ var work = {
 		{
 			"employer": "Celebal Technologies",
 			"url": "http://www.celebaltech.com",
-			"title": "Associate Data Engineer",
+			"title": "Data Engineer",
 			"location": "Jaipur, India",
-			"dates": "2017 - Present",
+			"dates": "2019 - Present",
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		},
-
+		{
+			"employer": "Celebal Technologies",
+			"url": "http://www.celebaltech.com",
+			"title": "Associate Data Engineer",
+			"location": "Jaipur, India",
+			"dates": "2017 - 2019",
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
+		}
 	]
 }
 
@@ -158,7 +165,7 @@ var education = {
 			"board": "Rajasthan Technical University",
 			"url": "http://pce.poornima.org",
 			"dates": "2019",
-			"grades": "65.37 %"
+			"grades": "66.04 %"
 		},
 		{
 			"school": "Jhunjhunu Academy",
