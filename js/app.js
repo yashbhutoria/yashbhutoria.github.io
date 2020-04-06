@@ -4,7 +4,7 @@
 
 var about = {
 	"header": "About",
-	"content": "Data Engineering, Machine Learning and Azure PaaS"
+	"content": "A Data Engineer with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade data integration solution on Microsoft Azure. Community contributor being a mentor and judge in national hackathons in renowned institutions."
 }
 
 var bio = {
@@ -12,7 +12,7 @@ var bio = {
 	"role": "Data Engineer",
 	"location": "Jaipur India",
 	"bioPic": "img/profile.jpg",
-	"email": "yash.bhutoria@celebaltech.com",
+	"email": "yash222219@gmail.com",
 	"phone": "+919521878460"
 }
 
@@ -20,44 +20,44 @@ var skills = {
 	"header": "Skills",
 	"fields": [
 		{
-			"field": "Languages",
-			"skills": ["Python 3", "Java SE 8"]
+			"field": "Programming Languages",
+			"skills": ["Python 3 (Primary)", "C# (Secondary)","Java (Basics)"]
+		},
+		{
+			"field": "Data ETL Platforms",
+			"skills": ["SQL Server Integration Services","Azure Data Factory", "Google Data Fusion"]
+		},
+		{
+			"field": "Cloud Services",
+			"skills": ["Azure Logic Apps", "Azure Functions", "Azure Service Bus", "Azure Event Grid", "Azure API Management","Azure App Services", "Azure Storage Services"]
+		},
+		{
+			"field": "Project Domains",
+			"skills": ["Enterprise Integration","Data Engineering","Infrastructure as Code","API Design","Machine Learning","Business Intelligence"]
+		},
+		{
+			"field": "DevOps Tools",
+			"skills": ["Terraform","Git", "Docker","Azure Pipelines", "Jira"]
 		},
 		{
 			"field": "Libraries",
-			"skills": ["Pytorch", "OpenCV", "Scikt-learn", "Pandas", "Numpy"]
+			"skills": ["Azure SDK", "Matplotlib", "Pandas"]
 		},
 		{
 			"field": "Databases",
-			"skills": ["SQL Server", "MySQL"]
+			"skills": ["SQL Server", "MySQL", "CosmosDB"]
 		},
 		{
 			"field": "Query Languages",
 			"skills": ["SQL", "DAX"]
 		},
 		{
-			"field": "Data Tools",
-			"skills": ["SQL Server Integration Services", "SQL Server Analysis Services", "Azure Analysis Services"]
-		},
-		{
-			"field": "Cloud Tools",
-			"skills": ["Azure Logic Apps", "Azure Functions"]
-		},
-		{
 			"field": "Reporting Tools",
 			"skills": ["Power BI"]
 		},
 		{
-			"field": "Project Domains",
-			"skills": ["Data Engineering", "Machine Learning", "ETL", "Business Intelligence", "Serverless"]
-		},
-		{
 			"field": "Frameworks",
-			"skills": ["Flask", "Django","Selenium"]
-		},
-		{
-			"field": "Other tools",
-			"skills": ["Git", "Docker"]
+			"skills": ["Flask","Selenium","Django"]
 		},
 	]
 }
@@ -68,9 +68,7 @@ var navigation = {
 
 var contacts = {
 	"github": "yashbhutoria",
-	"instagram": "theyashbhutoria",
 	"linkedin": "yashbhutoria",
-	"twitter": "@theyashbhutoria"
 }
 
 var work = {
@@ -79,17 +77,25 @@ var work = {
 		{
 			"employer": "Celebal Technologies",
 			"url": "http://www.celebaltech.com",
-			"title": "Data Engineer",
+			"title": "Data Engineer <br> (9 Months)",
 			"location": "Jaipur, India",
-			"dates": "2019 - Present",
+			"dates": "Aug 2019 - Present",
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		},
 		{
 			"employer": "Celebal Technologies",
 			"url": "http://www.celebaltech.com",
-			"title": "Associate Data Engineer",
+			"title": "Trainee Data Engineer <br> (3 Months)",
 			"location": "Jaipur, India",
-			"dates": "2017 - 2019",
+			"dates": "May 2019 - July 2019",
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
+		},
+		{
+			"employer": "Celebal Technologies",
+			"url": "http://www.celebaltech.com",
+			"title": "Associate Data Engineer (Intern)<br> (1 Year 7 Months)",
+			"location": "Jaipur, India",
+			"dates": "October 2017 - Apri 2019",
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		}
 	]
@@ -99,34 +105,52 @@ var projects = {
 	"header": "Projects",
 	"projects": [
 		{
-			"title": "Terraform Automation",
+			"title": "iPaaS on Azure (for a Hospitality Company at San Diego)",
 			"url": "",
-			"dates": "2019",
-			"description": "Created fully automated spoke deployment solution to deploy desired architecture on Azure Enterprise Cloud using Terraform templates and Flask UI",
+			"dates": "2019 - 2020",
+			"description": "The customer wanted to eliminate point to point custom data integration solution with a unified and extendable platform. Designed and developed an integration platform on Azure being a lead developer handling a team of 4. The project included C# based server-less functions, API Gateway, Cloud-based automated workflows and Infrastructure as Code all deployed and configured with CI/CD Pipelines for automation and agility.",
 			"images": [
 				""
 			]
 		},
 		{
-			"title": "Hate Speech Detection and Twitter Integration",
+			"title": "Learning and Development Reporting (for an Indian Telecom Company)",
 			"url": "",
 			"dates": "2019",
-			"description": "A Web Based Tool and REST API that detects hate speech and offensive language using Logistic Regression on Twitter data fetched from APIs",
+			"description": "The project delivered a Power BI dashboard showing learning and development progress and metrics on the entire company. This solution is built to automatically pull the data from the company's various learning platforms, transformed and stored into Azure SQL Database. The data pipelines were built upon API and Selenium-based scheduled jobs.",
 			"images": [
 				""
 			]
 		},
 		{
-			"title": "Serverless Data Pipelines",
+			"title": "DL Based Spill Detection (for an Indian Manufacturer)",
+			"url": "",
+			"dates": "2019",
+			"description": "Solved customer's problem for detecting oil container spills in a factory by deploying a deep learning based model to automatically detect and alert security systems for any harmful oil spill in the premise using existing CCTV cameras",
+			"images": [
+				""
+			]
+		},
+		{
+			"title": "Infrastructure Automation (for a US based Investment Firm)",
+			"url": "",
+			"dates": "2019",
+			"description": "Created fully automated spoke deployment reusable Terraform scripts to deploy desired architecture on Azure using Terraform templates and Flask UI",
+			"images": [
+				""
+			]
+		},
+		{
+			"title": "Serverless Data Pipelines (for an Austrailing Accounting Company)",
 			"url": "",
 			"dates": "2018",
-			"description": "Data integration project based on Azure Functions and Azure Logic App to schedule and automate data pipelines along with some transformation",
+			"description": "Data integration project based on Azure Functions and Azure Logic App to schedule and automate data pipelines along with some transformations",
 			"images": [
 				""
 			]
 		},
 		{
-			"title": "Azure OMS to ServiceNow Automation Solution",
+			"title": "Azure OMS to ServiceNow Automation Solution (for a US based Investment Firm)",
 			"url": "",
 			"dates": "2018",
 			"description": "Automated the creation of Incidents on SNOW, creating Azure Logic App and Azure Function App, from the process of alert generation to ticket generation",
@@ -135,7 +159,7 @@ var projects = {
 			]
 		},
 		{
-			"title": "SAP Reporting",
+			"title": "SAP Reporting (for a US based Financial Consulting Firm)",
 			"url": "",
 			"dates": "2017",
 			"description": "Reporting Service project using SSIS and Power BI on an SAP database. Data pulled from SAP Table using Xtract IS and loaded to SQL Server. The data then used to create a Power BI Report.",
@@ -144,7 +168,16 @@ var projects = {
 			]
 		},
 		{
-			"title": "Dynamic Row Level Security Implementation",
+			"title": "Hate Speech Detection and Twitter Integration (College Project)",
+			"url": "",
+			"dates": "2019",
+			"description": "A Web Based Tool and REST API that detects hate speech and offensive language using Logistic Regression on Twitter data fetched from APIs",
+			"images": [
+				""
+			]
+		},
+		{
+			"title": "Dynamic Row Level Security Implementation (POC)",
 			"url": "",
 			"dates": "2017",
 			"description": "A tabular model deployed on SQL Server Analysis Server with DAX filters, so that a Power BI report shows data only what is permissible to a user viewing it as per decided visiblity.",
