@@ -75,28 +75,12 @@ var work = {
 	"header": "Work",
 	"jobs": [
 		{
-			"employer": "Celebal Technologies",
-			"url": "http://www.celebaltech.com",
-			"title": "Data Engineer <br> (9 Months)",
+			"employer": "truData",
+			"url": "https://trudatasolutions.com/",
+			"title": "Data Engineer",
 			"location": "Jaipur, India",
-			"dates": "Aug 2019 - Present",
-			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
-		},
-		{
-			"employer": "Celebal Technologies",
-			"url": "http://www.celebaltech.com",
-			"title": "Trainee Data Engineer <br> (3 Months)",
-			"location": "Jaipur, India",
-			"dates": "May 2019 - July 2019",
-			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
-		},
-		{
-			"employer": "Celebal Technologies",
-			"url": "http://www.celebaltech.com",
-			"title": "Associate Data Engineer (Intern)<br> (1 Year 7 Months)",
-			"location": "Jaipur, India",
-			"dates": "October 2017 - Apri 2019",
-			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
+			"dates": "July 2019 - Present",
+			"description": "Data Integration, Serverless Applications, DevOps and Development"
 		}
 	]
 }
