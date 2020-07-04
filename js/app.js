@@ -21,7 +21,7 @@ var skills = {
 	"fields": [
 		{
 			"field": "Programming Languages",
-			"skills": ["Python 3 (Primary)", "C# (Secondary)","Java (Basics)"]
+			"skills": ["Python 3 (Primary)","Go (Basics)","Java (Basics)"]
 		},
 		{
 			"field": "Data ETL Platforms",
@@ -57,7 +57,7 @@ var skills = {
 		},
 		{
 			"field": "Frameworks",
-			"skills": ["Flask","Selenium","Django"]
+			"skills": ["Flask","Selenium"]
 		},
 	]
 }
@@ -75,12 +75,31 @@ var work = {
 	"header": "Work",
 	"jobs": [
 		{
-			"employer": "truData",
-			"url": "https://trudatasolutions.com/",
+			"employer": "Celebal Technologies",
+			"url": "http://www.celebaltech.com",
 			"title": "Data Engineer",
 			"location": "Jaipur, India",
-			"dates": "July 2019 - Present",
-			"description": "Data Integration, Serverless Applications, DevOps and Development"
+			"dates": "Aug 2019 - Present",
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
+		},
+		{
+			"employer": "Celebal Technologies",
+			"url": "http://www.celebaltech.com",
+			"title": "Trainee Data Engineer <br> (3 Months)",
+			"location": "Jaipur, India",
+			"dates": "2019 - Present",
+			"dates": "May 2019 - July 2019",
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
+		},
+		{
+			"employer": "Celebal Technologies",
+			"url": "http://www.celebaltech.com",
+			"title": "Associate Data Engineer",
+			"title": "Associate Data Engineer (Intern)<br> (1 Year 7 Months)",
+			"location": "Jaipur, India",
+			"dates": "2017 - 2019",
+			"dates": "October 2017 - Apri 2019",
+			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		}
 	]
 }
@@ -95,6 +114,18 @@ var projects = {
 			"description": "The customer wanted to eliminate point to point custom data integration solution with a unified and extendable platform. Designed and developed an integration platform on Azure being a lead developer handling a team of 4. The project included C# based server-less functions, API Gateway, Cloud-based automated workflows and Infrastructure as Code all deployed and configured with CI/CD Pipelines for automation and agility.",
 			"images": [
 				""
+			]
+		},
+		{
+			"title": "Matplotlib Visuals Service",
+			"url": "https://hub.docker.com/repository/docker/yashbhutoria/matplotlib-visual-service",
+			"dates": "2020",
+			"description": "This service was created as a REST API to generate custom graphs and visuals using Matplotlib API. This was used in a chatbot to show visuals and graphs within the conversation on the fly showing micro analytics of various metrics.",
+			"images": [
+				"../img/dial.jpg",
+				"../img/funnel2.jpg",
+				"../img/trendtile2.jpg",
+				"../img/line_and_trend.jpg",
 			]
 		},
 		{
