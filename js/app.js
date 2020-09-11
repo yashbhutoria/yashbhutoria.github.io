@@ -21,23 +21,23 @@ var skills = {
 	"fields": [
 		{
 			"field": "Programming Languages",
-			"skills": ["Python 3 (Primary)","Go (Basics)","Java (Basics)"]
+			"skills": ["Python 3 (Primary)", "Go (Basics)", "Java (Basics)"]
 		},
 		{
 			"field": "Data ETL Platforms",
-			"skills": ["SQL Server Integration Services","Azure Data Factory", "Google Data Fusion"]
+			"skills": ["SQL Server Integration Services", "Azure Data Factory", "Google Data Fusion"]
 		},
 		{
 			"field": "Cloud Services",
-			"skills": ["Azure Logic Apps", "Azure Functions", "Azure Service Bus", "Azure Event Grid", "Azure API Management","Azure App Services", "Azure Storage Services"]
+			"skills": ["Azure Logic Apps", "Azure Functions", "Azure Service Bus", "Azure Event Grid", "Azure API Management", "Azure App Services", "Azure Storage Services"]
 		},
 		{
 			"field": "Project Domains",
-			"skills": ["Enterprise Integration","Data Engineering","Infrastructure as Code","API Design","Machine Learning","Business Intelligence"]
+			"skills": ["Enterprise Integration", "Data Engineering", "Infrastructure as Code", "API Design", "Machine Learning", "Business Intelligence"]
 		},
 		{
 			"field": "DevOps Tools",
-			"skills": ["Terraform","Git", "Docker","Azure Pipelines", "Jira"]
+			"skills": ["Terraform", "Git", "Docker", "Azure Pipelines", "Jira"]
 		},
 		{
 			"field": "Libraries",
@@ -57,7 +57,7 @@ var skills = {
 		},
 		{
 			"field": "Frameworks",
-			"skills": ["Flask","Selenium"]
+			"skills": ["Flask", "Selenium"]
 		},
 	]
 }
@@ -107,6 +107,15 @@ var work = {
 var projects = {
 	"header": "Projects",
 	"projects": [
+		{
+			"title": "Data Integration on Dell Boomi (for a Global Sports Brand)",
+			"url": "",
+			"dates": "05/2020 – 08/2020",
+			"description": "Lead Offshore Developer, lead a team of 4.Managed overall offshore delivery, and produced planning and design documents. Developed integrations connecting 10+ systems to run on daily batches and real-time frequencies using Dell Boomi Integration platform as a middleware.",
+			"images": [
+				""
+			]
+		},
 		{
 			"title": "iPaaS on Azure (for a Hospitality Company at San Diego)",
 			"url": "",
