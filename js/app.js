@@ -111,7 +111,7 @@ var projects = {
 			"title": "Data Integration on Dell Boomi (for a Global Sports Brand)",
 			"url": "",
 			"dates": "05/2020 – 08/2020",
-			"description": "Lead Offshore Developer, lead a team of 4.Managed overall offshore delivery, and produced planning and design documents. Developed integrations connecting 10+ systems to run on daily batches and real-time frequencies using Dell Boomi Integration platform as a middleware.",
+			"description": "Lead Offshore Developer, lead a team of 4. Managed overall offshore delivery, and produced planning and design documents. Developed integrations connecting 10+ systems to run on daily batches and real-time frequencies using Dell Boomi Integration platform as a middleware.",
 			"images": [
 				""
 			]
