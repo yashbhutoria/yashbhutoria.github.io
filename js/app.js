@@ -41,7 +41,7 @@ var skills = {
 		},
 		{
 			"field": "Libraries",
-			"skills": ["Azure SDK", "Matplotlib", "Pandas"]
+			"skills": ["Azure SDK", "Matplotlib", "Pandas", "Pydantic"]
 		},
 		{
 			"field": "Databases",
@@ -57,7 +57,7 @@ var skills = {
 		},
 		{
 			"field": "Frameworks",
-			"skills": ["Flask", "Selenium"]
+			"skills": ["FastAPI", "Flask", "Selenium"]
 		},
 	]
 }
@@ -71,13 +71,32 @@ var contacts = {
 	"linkedin": "yashbhutoria",
 }
 
+function getYearsAndMonthsSince(date) {
+	let years_float = (Date.now() - date) / 31556952000;
+	let years = Math.floor(years_float);
+	let months = Math.ceil((years_float - years) * 12);
+	response = years
+	if (years == 1) {
+		response += " Year "
+	} else {
+		response += " Years "
+	}
+	response += months
+	if (months == 1) {
+		response += " Month"
+	} else {
+		response += " Months"
+	}
+	return response
+}
+
 var work = {
 	"header": "Work",
 	"jobs": [
 		{
 			"employer": "Celebal Technologies",
 			"url": "http://www.celebaltech.com",
-			"title": "Data Engineer",
+			"title": "Data Engineer <br> (" + getYearsAndMonthsSince(new Date(2019, 8))+")",
 			"location": "Jaipur, India",
 			"dates": "Aug 2019 - Present",
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
@@ -87,7 +106,6 @@ var work = {
 			"url": "http://www.celebaltech.com",
 			"title": "Trainee Data Engineer <br> (3 Months)",
 			"location": "Jaipur, India",
-			"dates": "2019 - Present",
 			"dates": "May 2019 - July 2019",
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		},
@@ -97,7 +115,6 @@ var work = {
 			"title": "Associate Data Engineer",
 			"title": "Associate Data Engineer (Intern)<br> (1 Year 7 Months)",
 			"location": "Jaipur, India",
-			"dates": "2017 - 2019",
 			"dates": "October 2017 - Apri 2019",
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		}
@@ -107,6 +124,15 @@ var work = {
 var projects = {
 	"header": "Projects",
 	"projects": [
+		{
+			"title": "Data Lake Implementation on GCP (for a Medical Device Manufacturer)",
+			"url": "",
+			"dates": "08/2020 – 09/2020",
+			"description": "Lead Integration Developer. Designed the GCP solution and setup project infrastructure on GCP with services like VPC, Cloud Data Fusion, Cloud Dataproc, AI Notebooks, Cloud Function, GCS and BigQuery. Created data pipelines from SAP HANA and SAP ECC over ODBC and ODATA protocols. Wrote Python code in Cloud Functions and AI Notebooks. Scheduled the jobs using Cloud Scheduler.",
+			"images": [
+				""
+			]
+		},
 		{
 			"title": "Data Integration on Dell Boomi (for a Global Sports Brand)",
 			"url": "",
