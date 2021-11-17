@@ -21,11 +21,11 @@ var skills = {
 	"fields": [
 		{
 			"field": "Programming Languages",
-			"skills": ["Python 3 (Primary)", "Go (Basics)", "Java (Basics)"]
+			"skills": ["Python 3 (Primary)", "Go (Basics)"]
 		},
 		{
 			"field": "Data ETL Platforms",
-			"skills": ["SQL Server Integration Services", "Azure Data Factory", "Google Data Fusion"]
+			"skills": ["Azure Data Factory","Dell Boomi","SQL Server Integration Services","Google Data Fusion"]
 		},
 		{
 			"field": "Cloud Services",
