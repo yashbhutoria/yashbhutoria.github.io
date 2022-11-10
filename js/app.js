@@ -4,16 +4,16 @@
 
 var about = {
 	"header": "About",
-	"content": "A Data Engineer with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade data integration solution on Microsoft Azure. Community contributor being a mentor and judge in national hackathons in renowned institutions."
+	"content": "👋 Hi I'm Yash! A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud. I started as a Data Engineer and got introduced to Cloud Computing and enterprise software.<br><br> I believe that programming is the closest skill to wizardry that one can possess. My favorite topics are Python, Azure and Enterprise Integration. I participate as a speaker, mentor and judge in hackathons, tech communities and colleges."
 }
 
 var bio = {
 	"name": "Yash Bhutoria",
-	"role": "Data Engineer",
-	"location": "Jaipur India",
+	"role": "Grad Student",
+	"location": "Champaign, IL",
 	"bioPic": "img/profile.jpg",
 	"email": "yash222219@gmail.com",
-	"phone": "+919521878460"
+	"phone": "+12172000330"
 }
 
 var skills = {
@@ -25,7 +25,7 @@ var skills = {
 		},
 		{
 			"field": "Data ETL Platforms",
-			"skills": ["Azure Data Factory","Dell Boomi","SQL Server Integration Services","Google Data Fusion"]
+			"skills": ["Databricks","Azure Data Factory","Dell Boomi","SQL Server Integration Services","Google Data Fusion"]
 		},
 		{
 			"field": "Cloud Services",
@@ -37,7 +37,7 @@ var skills = {
 		},
 		{
 			"field": "DevOps Tools",
-			"skills": ["Terraform", "Git", "Docker", "Azure Pipelines", "Jira"]
+			"skills": ["Azure DevOps","Terraform", "Git", "Docker", "Jira"]
 		},
 		{
 			"field": "Libraries",
@@ -57,7 +57,7 @@ var skills = {
 		},
 		{
 			"field": "Frameworks",
-			"skills": ["FastAPI", "Flask", "Selenium"]
+			"skills": ["FastAPI", "Flask", "Selenium", "PySpark"]
 		},
 	]
 }
@@ -69,6 +69,8 @@ var navigation = {
 var contacts = {
 	"github": "yashbhutoria",
 	"linkedin": "yashbhutoria",
+	"instagram":"theyashbhutoria",
+	"twitter":"theyashbhutoria"
 }
 
 function getYearsAndMonthsSince(date) {
@@ -94,12 +96,20 @@ var work = {
 	"header": "Work",
 	"jobs": [
 		{
+			"employer": "Gies College of Business",
+			"url": "https://giesbusiness.illinois.edu/",
+			"title": "Research Assistant <br> (" + getYearsAndMonthsSince(new Date(2022, 10))+")",
+			"location": "Champaign, IL",
+			"dates": "Oct 2022 - Present",
+			"description": "The research aims to ingest, store and analyze the growth and movement of development and jobs in Web3"
+		},
+		{
 			"employer": "Celebal Technologies",
 			"url": "http://www.celebaltech.com",
-			"title": "Data Engineer <br> (" + getYearsAndMonthsSince(new Date(2019, 8))+")",
+			"title": "MTS <br> (3 Years)",
 			"location": "Jaipur, India",
-			"dates": "Aug 2019 - Present",
-			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
+			"dates": "Aug 2019 - July 2022",
+			"description": "A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud."
 		},
 		{
 			"employer": "Celebal Technologies",
@@ -243,19 +253,27 @@ var education = {
 	"formalHeader": "Formal",
 	"formalSchools": [
 		{
-			"school": "Poornima College of Engineering, Jaipur",
+			"school": "University of Illinois Urbana-Champaign",
+			"qualification": "Master of Science in Business Analytics",
+			"board": "Gies College of Business",
+			"url": "https://illinois.edu/",
+			"dates": "2022 - 2023",
+			"grades": ""
+		},
+		{
+			"school": "Rajasthan Technical University",
 			"qualification": "B.Tech",
-			"board": "Rajasthan Technical University",
+			"board": "Poornima College of Engineering, Jaipur",
 			"url": "http://pce.poornima.org",
-			"dates": "2019",
-			"grades": "66.04 %"
+			"dates": "2015 - 2019",
+			"grades": ""
 		},
 		{
 			"school": "Jhunjhunu Academy",
 			"board": "CBSE",
 			"qualification": "Senior Secondary",
 			"url": "http://www.jhunjhunuacademy.org/",
-			"dates": "2015",
+			"dates": "2013 - 2015",
 			"grades": "89.80 %"
 		},
 		{
