@@ -4,13 +4,13 @@
 
 var about = {
 	"header": "About",
-	"content": "👋 Hi I'm Yash! A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud. I started as a Data Engineer and got introduced to Cloud Computing and enterprise software.<br><br> I believe that programming is the closest skill to wizardry that one can possess. My favorite topics are Python, Azure and Enterprise Integration. I participate as a speaker, mentor and judge in hackathons, tech communities and colleges."
+	"content": "As a Principal Consultant at Celebal Technologies, I design, develop, and manage robust and scalable enterprise-grade integration solutions on Azure Cloud Platform. I leverage my expertise in Azure PaaS, Data Engineering, and Serverless technologies to deliver value to clients across various domains, such as energy, sustainability, healthcare, and education.<br>I hold a Master of Science in Business Analytics from the University of Illinois Urbana-Champaign, where I was a graduate research assistant and a lifetime member of Beta Gamma Sigma Honor Society. I also have a Bachelor of Technology in Computer Software Engineering from Poornima College of Engineering. I am passionate about Python, Azure, and Enterprise Integration, and I enjoy sharing my knowledge and experience as a speaker, mentor, and judge in hackathons, tech communities, and colleges. My goal is to use my skills and creativity to solve complex business problems and drive innovation."
 }
 
 var bio = {
 	"name": "Yash Bhutoria",
-	"role": "Grad Student",
-	"location": "Champaign, IL",
+	"role": "Enterprise Cloud Architect",
+	"location": "Dallas, TX",
 	"bioPic": "img/profile.jpg",
 	"email": "yash222219@gmail.com",
 	"phone": "+12172000330"
@@ -96,11 +96,19 @@ var work = {
 	"header": "Work",
 	"jobs": [
 		{
+			"employer": "Celebal Technologies",
+			"url": "http://www.celebaltech.com",
+			"title": "Principal Consultant <br> (" + getYearsAndMonthsSince(new Date(2022, 10))+")",
+			"location": "Dallas, TX",
+			"dates": "May 2023 - Present",
+			"description": "A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud."
+		},
+		{
 			"employer": "Gies College of Business",
 			"url": "https://giesbusiness.illinois.edu/",
-			"title": "Research Assistant <br> (" + getYearsAndMonthsSince(new Date(2022, 10))+")",
+			"title": "Research Assistant <br> (8 Months)",
 			"location": "Champaign, IL",
-			"dates": "Oct 2022 - Present",
+			"dates": "Oct 2022 - May 2023",
 			"description": "The research aims to ingest, store and analyze the growth and movement of development and jobs in Web3"
 		},
 		{
