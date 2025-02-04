@@ -4,7 +4,7 @@
 
 var about = {
 	"header": "About",
-	"content": "As a Principal Consultant at Celebal Technologies, I design, develop, and manage robust and scalable enterprise-grade integration solutions on Azure Cloud Platform. I leverage my expertise in Azure PaaS, Data Engineering, and Serverless technologies to deliver value to clients across various domains, such as energy, sustainability, healthcare, and education.<br><br>I hold a Master of Science in Business Analytics from the University of Illinois Urbana-Champaign, where I was a graduate research assistant and a lifetime member of Beta Gamma Sigma Honor Society. I also have a Bachelor of Technology in Computer Software Engineering from Poornima College of Engineering. I am passionate about Python, Azure, and Enterprise Integration, and I enjoy sharing my knowledge and experience as a speaker, mentor, and judge in hackathons, tech communities, and colleges. My goal is to use my skills and creativity to solve complex business problems and drive innovation."
+	"content": "A Celebal Technologies, I design, develop, and manage robust and scalable enterprise-grade integration solutions on Azure Cloud Platform. I leverage my expertise in Azure PaaS, Data Engineering, and Serverless technologies to deliver value to clients across various domains, such as energy, sustainability, healthcare, and education.<br><br>I hold a Master of Science in Business Analytics from the University of Illinois Urbana-Champaign, where I was a graduate research assistant and a lifetime member of Beta Gamma Sigma Honor Society. I also have a Bachelor of Technology in Computer Software Engineering from Poornima College of Engineering. I am passionate about Python, Azure, and Enterprise Integration, and I enjoy sharing my knowledge and experience as a speaker, mentor, and judge in hackathons, tech communities, and colleges. My goal is to use my skills and creativity to solve complex business problems and drive innovation."
 }
 
 var bio = {
@@ -21,7 +21,7 @@ var skills = {
 	"fields": [
 		{
 			"field": "Programming Languages",
-			"skills": ["Python 3 (Primary)", "Go (Basics)"]
+			"skills": ["Python 3 (Primary)", "C#"]
 		},
 		{
 			"field": "Data ETL Platforms",
@@ -69,8 +69,6 @@ var navigation = {
 var contacts = {
 	"github": "yashbhutoria",
 	"linkedin": "yashbhutoria",
-	"instagram":"theyashbhutoria",
-	"twitter":"theyashbhutoria"
 }
 
 function getYearsAndMonthsSince(date) {
@@ -96,11 +94,19 @@ var work = {
 	"header": "Work",
 	"jobs": [
 		{
-			"employer": "Celebal Technologies",
+			"employer": "Celebal Technologies Americas Inc.",
 			"url": "http://www.celebaltech.com",
-			"title": "Principal Consultant <br> (" + getYearsAndMonthsSince(new Date(2022, 10))+")",
+			"title": "Assistant Vice President <br> (" + getYearsAndMonthsSince(new Date(2025, 1))+")",
 			"location": "Dallas, TX",
-			"dates": "May 2023 - Present",
+			"dates": "Jan 2025 - Present",
+			"description": "A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud."
+		},
+		{
+			"employer": "Celebal Technologies Americas Inc.",
+			"url": "http://www.celebaltech.com",
+			"title": "Principal Consultant <br> (1 Year 9 Months)",
+			"location": "Dallas, TX",
+			"dates": "May 2023 - Jan 2025",
 			"description": "A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud."
 		},
 		{
@@ -112,7 +118,7 @@ var work = {
 			"description": "The research aims to ingest, store and analyze the growth and movement of development and jobs in Web3"
 		},
 		{
-			"employer": "Celebal Technologies",
+			"employer": "Celebal Technologies Pvt Ltd.",
 			"url": "http://www.celebaltech.com",
 			"title": "MTS <br> (3 Years)",
 			"location": "Jaipur, India",
@@ -120,7 +126,7 @@ var work = {
 			"description": "A Solutions Architect with expertise and hands-on experience in designing, developing and managing robust and scalable enterprise-grade integration solutions on Cloud."
 		},
 		{
-			"employer": "Celebal Technologies",
+			"employer": "Celebal Technologies Pvt Ltd.",
 			"url": "http://www.celebaltech.com",
 			"title": "Trainee Data Engineer <br> (3 Months)",
 			"location": "Jaipur, India",
@@ -128,7 +134,7 @@ var work = {
 			"description": "Data Integration, Data Modeling, Pipeline Scripting, Data Reporting and Deployment, Azure Serverless "
 		},
 		{
-			"employer": "Celebal Technologies",
+			"employer": "Celebal Technologies Pvt Ltd.",
 			"url": "http://www.celebaltech.com",
 			"title": "Associate Data Engineer",
 			"title": "Associate Data Engineer (Intern)<br> (1 Year 7 Months)",
@@ -145,7 +151,7 @@ var projects = {
 		{
 			"title": "Data Lake Implementation on GCP (for a Medical Device Manufacturer)",
 			"url": "",
-			"dates": "08/2020 – 09/2020",
+			"dates": "08/2020 - 09/2020",
 			"description": "Lead Integration Developer. Designed the GCP solution and setup project infrastructure on GCP with services like VPC, Cloud Data Fusion, Cloud Dataproc, AI Notebooks, Cloud Function, GCS and BigQuery. Created data pipelines from SAP HANA and SAP ECC over ODBC and ODATA protocols. Wrote Python code in Cloud Functions and AI Notebooks. Scheduled the jobs using Cloud Scheduler.",
 			"images": [
 				""
@@ -154,7 +160,7 @@ var projects = {
 		{
 			"title": "Data Integration on Dell Boomi (for a Global Sports Brand)",
 			"url": "",
-			"dates": "05/2020 – 08/2020",
+			"dates": "05/2020 - 08/2020",
 			"description": "Lead Offshore Developer, lead a team of 4. Managed overall offshore delivery, and produced planning and design documents. Developed integrations connecting 10+ systems to run on daily batches and real-time frequencies using Dell Boomi Integration platform as a middleware.",
 			"images": [
 				""
