@@ -9,15 +9,15 @@ $base-line-height: $rem-base * 1.5;
 @include establish-baseline;
 
 body {
-	background: #fff;
+	background: $body-bg; // Changed from #fff
 	font-family: $font-normal;
 	//@include debug-vertical-alignment;
 }
 
 #{headings(all)} {
-	color: #657380;
+	color: $dark-gray; // Changed from #657380
 	font-family: $font-normal;
-	font-weight: 700;
+	font-weight: 700; // Corresponds to bold
 	margin: 2.355rem 0;
 }
 
@@ -33,10 +33,10 @@ h3 {
 }
 
 p {
-	color: #657380;
+	color: $body-font-color; // Changed from #657380
 	font-family: $font-condensed;
 	font-weight: 300;
-	font-size: 1.3rem;
+	font-size: 1.1rem; // Reduced from 1.3rem
 	margin-bottom: 0;
 }
 
@@ -45,33 +45,33 @@ a {
 }
 
 a.link-text {
-	color: #1eaede;
+	color: $primary-color; // Changed from #1eaede
 	font-family: $font-normal;
 	font-weight: 500;
-	font-size: 1.3rem;
+	font-size: 1.1rem; // Matched paragraph font size
 	
 	&:hover {
-		color: #1eaede;
-		background: #f9f9f9;
+		color: scale-color($primary-color, $lightness: -10%); // Darken on hover
+		background: $light-gray; // Changed from #f9f9f9
 	}
 }
 
 .date-text {
-	color: #657380;
-	font-size: 1.2rem;
+	color: $medium-gray; // Changed from #657380
+	font-size: 1rem; // Adjusted for consistency
 	font-family: $font-normal;
 }
 
 .location-text {
-	color: #657380;
-	font-size: 1.2rem;
+	color: $medium-gray; // Changed from #657380
+	font-size: 1rem; // Adjusted for consistency
 	font-family: $font-normal;
 }
 
 .light-text {
-	color: #657380;
+	color: $medium-gray; // Changed from #657380
 	font-family: $font-normal;
-	opacity: 0.5;
+	opacity: 0.7; // Slightly increased opacity for better readability
 }
 
 .screen-reader {
@@ -86,7 +86,7 @@ a.link-text {
 
 .left-content {
     border: medium none;
-    background: #424242;
+    background: $secondary-color; // Changed to light sidebar background
     
     @media #{$large-up} {
     	height: 100%;
@@ -97,7 +97,7 @@ a.link-text {
     }
 
     .email {
-    	color: #f1f1f1;
+    	color: $body-font-color; // Adjusted for light background
     	display: none;
     	position: absolute;
     	bottom: 5rem;
@@ -127,13 +127,13 @@ a.link-text {
 	position: relative;
 	
 	h1 {
-		color: #f2f2f2;
+		color: $dark-gray; // Adjusted for light background
 		text-align: center;
 		margin-bottom: 1rem;
 	}
 
 	.role {
-		color: #ccc;
+		color: $dark-gray; // Changed from $medium-gray for better contrast
 		text-transform: uppercase;
 		text-align: center;
 	}
@@ -152,7 +152,7 @@ a.link-text {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: #424242;
+	background: $secondary-color; // Changed for light theme consistency on small screens
 	z-index: 2;
 	padding: 4px 0 3px 0;
 	
@@ -161,26 +161,27 @@ a.link-text {
 		bottom: auto;
 		left: auto;
 		width: auto;
-		background: none;
+		background: none; // Keeps transparent background on large screens as part of .left-content
 		max-width: 230px;
 		padding: 0;
 	}
 
 	.fa {
-		color: #999;
+		color: $dark-gray; // Changed from $medium-gray for better contrast
 		font-size: 1.48rem;
 		margin: .3rem;
 		@include single-transition(all, .3s, ease-in-out);
 		&:hover {
-			color: #fff;
+			color: $primary-color; // Hover color changed to primary
 		}
 	}
 }
 
 // Navigation
 .navigation {
-	background: #fff;
-	border-bottom: 4px solid #424242;
+	background: $white; // Kept white for a clean look, or could use $body-bg
+	border-bottom: 2px solid $primary-color; // Thinner border, using primary color
+	box-shadow: 0 1px 3px rgba($black, 0.1); // Subtle shadow for depth
 		
 	nav {
 		height: 55px;
@@ -224,18 +225,19 @@ a.link-text {
 				}
 
 				a {
-					color: #657380;
+					color: $body-font-color; // Changed from #657380
 					text-transform: uppercase;
 					font-family: $font-normal;
 					font-weight: 700; 
 					
 					&.active {
-						color: #1eaede;
+						color: $primary-color; // Changed from #1eaede
 					}
 
 					@media #{$large-up} {
 						&:hover {
-							padding-right: 0.33rem;	
+							padding-right: 0.33rem;
+							color: scale-color($primary-color, $lightness: -10%);
 						}
 					}
 				}
@@ -249,13 +251,31 @@ a.link-text {
 
 }
 
+// Styling for dynamically generated entry classes
+.work-entry,
+.project-entry,
+.formal-entry {
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 1px solid $gainsboro;
+}
+
+.work-entry:last-child,
+.project-entry:last-child,
+.formal-entry:last-child {
+	border-bottom: none;
+	margin-bottom: 0.5rem;
+}
+
 // Projects 
 .projects {
 	img {
-		background: #fff;
+		background: $white; // Explicitly white background for the image frame
 		display: block;
 		margin: 2rem auto 2.5rem;
 		padding: 0.4rem;
+		border: 1px solid $gainsboro; // Using a variable from Foundation's greys
+		border-radius: $global-radius;
 	}
 }
 
@@ -266,22 +286,26 @@ a.link-text {
 
 // Skills
 .skills {
-	padding-bottom: 100px;
+	padding-bottom: 100px; // Consider adjusting if footer height changes significantly
 	
 	ul {
 		list-style: none;
 		margin: 0;
 		
 		li {
-			color: #657380;
+			color: $body-font-color; // Changed from #657380
+			span { // Ensure text within spans also gets the correct color
+				color: $body-font-color;
+			}
 		}
 	}
 }
 
 // Footer 
 footer {
-	background: #444;
-	color: #66757f;
+	background: $dark-gray; // Changed from #444
+	color: $light-gray; // Changed from #66757f for better contrast
+	padding: 0.5rem 0; // Added some padding
 	bottom: 0;
 	position: fixed;
 	width: 100%;
