@@ -1,0 +1,261 @@
+%----------------------------------------------------------------------------------------
+%  Packages And Other Document Configurations
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+
+% Document margins
+\usepackage[left=0.50in,top=0.6in,right=0.5in,bottom=0.6in]{geometry}
+
+% Color and hyperlink packages
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Footnote and margin adjustment packages
+\usepackage{footnote}
+\usepackage{changepage}
+
+% Fontawesome package for icons
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Tabularx package for custom tables
+\usepackage{tabularx}
+
+% Define navyblue color
+\definecolor{navyblue}{RGB}{0,54,123}
+
+%----------------------------------------------------------------------------------------
+%   Customizations
+%----------------------------------------------------------------------------------------
+
+% Define italicitem, bolditem, and plainitem commands
+\newcommand{\italicitem}[1]{\item{\textit{#1}}}
+\newcommand{\bolditem}[1]{\item{\textbf{#1}}}
+\newcommand{\plainitem}[1]{\item{#1}}
+
+% Define user-friendly link command for hyperlinks
+\newcommand{\link}[2]{{\href{#1}{#2}}}
+
+\newcommand{\entry}[2]{#1 & #2 \tabularnewline} % Defines an entry with two arguments: #1 for the first column and #2 for the second column
+
+%----------------------------------------------------------------------------------------
+%   Define envsection command for defining a new environment section
+%----------------------------------------------------------------------------------------
+
+\newcommand{\tableEnv}[2]{%
+    \begin{rSection}{#1} % Begin rSection with the given name
+        \begin{adjustwidth}{0.0in}{0.1in} % Set the left and right margins
+            \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{6ex}} X @{}}
+                #2 % Print the content inside the tabularx environment
+            \end{tabularx}
+        \end{adjustwidth}
+    \end{rSection}
+}
+
+%----------------------------------------------------------------------------------------
+%   Begin document
+%----------------------------------------------------------------------------------------
+
+% Set name with navyblue color
+\name{\color{navyblue}\normalfont Yash Bhutoria}
+
+
+\begin{document}
+    \centering{\color{navyblue}\fontsize{16}{16}\selectfont Assistant Vice President}
+    \printPersonalInfo{
+        \personalInfo{\tag{Email}\info{yash.bhutoria@celebaltech.com} \space \tag{Phone}\info{+1-217-200-0330}}
+        \personalInfo{\tag{LinkedIn}\info{linkedin.com/in/yashbhutoria} \space \tag{Location}\info{Dallas, TX}}
+    }
+    
+    
+    %----------------------------------------------------------------------------------------
+    %   Professional Summary
+    %----------------------------------------------------------------------------------------
+    
+    \begin{rSection}{Professional Summary}
+        {As Assistant Vice President at Celebal Technologies, I architect, develop, and manage robust and scalable enterprise-grade integration solutions on Azure Cloud Platform. I leverage my expertise in Azure PaaS, Data Engineering, and Serverless technologies to deliver value to clients across various domains, such as energy, sustainability, healthcare, and education.}
+    \end{rSection}
+    
+    %----------------------------------------------------------------------------------------
+    %   Work experience section
+    %----------------------------------------------------------------------------------------
+    
+    \begin{rSection}{Professional Experience}
+        
+        % Current work experience entry
+        \begin{rSubsection}{Celebal Technologies Americas, Inc.}{01/2025 - Present}{Assistant Vice President - Application Development}{Dallas, TX}
+            \item Handling the P\&L as the HOD of Application Development department
+            \item Facilitating communication between technical teams and management personnel
+            \item Analyzing key performance indicators to identify effective strategies
+            \item Pre-sales activities and solution designing
+            \item Strategic planning and advisory
+            \item Using excellent verbal skills to engage customers in conversation and effectively determine needs and requirements
+            \item Evaluating employee performance through observation of job duties as well as feedback from customers and clients
+            \item Managing and mentoring a team of 50
+        \end{rSubsection}
+        
+        % Previous work experience entry
+        \begin{rSubsection}{Celebal Technologies Americas, Inc.}{05/2023 - 01/2025}{Principal Consultant, Application Development}{Dallas, TX}
+            \item Handling the P\&L as the HOD of Application Development department
+            \item Drafted proposals outlining project scope, timeline, deliverables and cost estimates
+            \item Analyzing key performance indicators to identify effective strategies
+            \item Managing relationships with high value clients of the company
+            \item Facilitating communication between technical teams and management personnel
+            \item Assessed employees through on-site observation and interviews to determine strengths and weaknesses in work performance, methods, and team functions
+            \item Strategic planning and advisory
+            \item Managing and mentoring a team of 45
+        \end{rSubsection}
+
+            % Second work experience entry
+        \begin{rSubsection}{Gies College of Business - University of Illinois Urbana-Champaign}{10/2022 - 05/2023}{Graduate Research Assistant}{Champaign, IL}
+                \item Evaluated public datasets for Filecoin/IPFS storage suitability to provide universities with better understanding of decentralized storage protocols
+                \item Demonstrated decentralized computing use case over data
+                \item Created analytical model showing cost-benefit tradeoffs of using decentralized storage
+                \item Provided insights on potential benefits and risks of adopting decentralized storage solutions for university IT infrastructure
+        \end{rSubsection}
+
+        % First work experience entry
+        \begin{rSubsection}{Celebal Technologies Pvt. Ltd.}{05/2019 - 07/2022}{Member of Technical Staff, Enterprise Integration}{Jaipur, India}
+            \item Architecting and developing data integration solutions on hyperscalers like Azure and GCP
+            \item Managing delivery for high value clients
+            \item Growing and mentoring a team of 40 associates
+            \item Technical research, strategic planning and advisory
+            \item Architecting solutions for pre-sales
+        \end{rSubsection}
+        
+        % Associate Data Engineer position
+        \begin{rSubsection}{Celebal Technologies}{10/2017 - 04/2019}{Associate Data Engineer}{Jaipur, India}
+            \item Integrating data, performing ETL
+            \item Processing and Modelling Data into OLAP Models
+            \item Creating reports and dashboards from data models
+            \item Creating and Deploying solutions onto Azure
+        \end{rSubsection}
+        
+        
+    \end{rSection}
+    
+    
+    %----------------------------------------------------------------------------------------
+    %   Education section
+    %----------------------------------------------------------------------------------------
+    
+    \begin{rSection}{Education}
+        
+        % Master's degree entry
+        \begin{rSubsectionNoBullet}{\bf Master of Science in Business Analytics}{University of Illinois Urbana-Champaign}{Gies College of Business, Champaign, IL}{07/2022 - 05/2023}
+            \italicitem{Graduated with Beta Gamma Sigma honor }
+        \end{rSubsectionNoBullet}
+        
+        % Bachelor's degree entry
+        \begin{rSubsectionNoBullet}{\bf Bachelor of Technology in Computer Science}{Rajasthan Technical University}{Poornima College of Engineering, Jaipur, India}{07/2015 - 05/2019}
+            \italicitem{}
+        \end{rSubsectionNoBullet}
+        
+        % Senior Secondary entry
+        \begin{rSubsectionNoBullet}{\bf Senior Secondary}{CBSE}{Jhunjhunu Academy, Jaipur, India}{06/2013 - 05/2015}
+            \italicitem{89.80\%}
+        \end{rSubsectionNoBullet}
+        
+    \end{rSection}
+    
+    %----------------------------------------------------------------------------------------
+    % Technical skills section
+    %----------------------------------------------------------------------------------------
+    
+    \tableEnv{Technical Skills}{
+        \entry{Programming}{Python, C\#, JavaScript, Go, SQL, PowerShell, Bash, Terraform}
+        \entry{Cloud Platforms}{Azure (Expert), AWS (Proficient), Google Cloud Platform (Proficient)}
+        \entry{Databases}{Azure SQL, PostgreSQL, MySQL, CosmosDB, Redis, MongoDB}
+        \entry{DevOps \& Tools}{Docker, Kubernetes, Git, Azure DevOps, Jenkins, GitHub Actions, Terraform}
+        \entry{Data \& Analytics}{Apache Kafka, Airflow, PySpark, Databricks, Power BI, ETL/ELT}
+        \entry{Frameworks}{.NET Core, FastAPI, Spring Boot, React, Node.js}
+        \entry{Architecture}{Microservices, Serverless, Event-Driven, RESTful APIs, GraphQL}
+    }
+    
+    %----------------------------------------------------------------------------------------
+    % Projects
+    %----------------------------------------------------------------------------------------
+    
+    \begin{rSection}{Projects}
+            \begin{itemize}
+            \item \textbf{Integration Modernization (for a Snacks Manufacturer)} (09/2023 - Present):
+            \begin{itemize}
+                \item Role: Lead delivery across 5+ projects as an Architect and delivery manager, mentoring and overseeing 20+ Engineers for one of the largest snacks brands of the USA
+                \item Description: Established new and improved IT processes, standards and framework to streamline the operational efficiency of the customer
+            \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{IPaaS on Azure (for a Hospitality Company at San Diego)} (09/2019 - 07/2022):
+            \begin{itemize}
+                \item Role: Lead Offshore Developer, lead a team of 8
+                \item Description: The customer wanted to eliminate point to point custom data integration solution with a unified and extendable platform. Designed and developed an integration platform on Azure. The project included C\# based serverless functions, API Gateway, Cloud-based automated workflows and Infrastructure as Code all deployed and configured with CI/CD Pipelines for automation and agility.
+                \item Achievements: Finished phase one of the project by going live as part of a company wide technology makeover effort.
+            \end{itemize}
+        \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{Data Landscape Modernization (for an Illinois-based Motorparts Manufacturer)} (04/2021 - 04/2022):
+            \begin{itemize}
+                \item Role: Architect and Lead Developer, lead a team of 6
+                \item Description: Modernized the customer's data ingestion landscape by implementing batched data pipelines using Azure Data Factory and eliminating the need for any 3rd party middleware saving thousands of dollars in licensing costs. Established mechanisms to consolidate and move data from multiple SAP S/4 instances into Salesforce as aggregates to enable sales order reporting.
+            \end{itemize}
+        \end{itemize}
+        
+        \begin{itemize}
+            \item \textbf{Data Landscape Modernization (for a Medical Imaging Device Manufacturer in Manhattan)} (10/2020 - 05/2022):
+            \begin{itemize}
+                \item Role: Architect and Lead Developer, lead a team of 6
+                \item Description: Modernized the customer's data landscape by moving from legacy on-premise database to a managed cloud database on Microsoft Azure, bringing down operational and management cost by approximately 40%. Established batch and real-time data ingestion pipelines from SAP C4C to Azure SQL Database with monitoring using in a Serverless fashion, well-defined procedures for deployment and release using Azure DevOps to ensure collaboration and quality control.
+            \end{itemize}
+        \end{itemize}
+        
+        \begin{itemize}
+            \item \textbf{Data Integration on Dell Boomi (for a Global Sports Brand)} (05/2020 - 08/2020):
+            \begin{itemize}
+                \item Role: Lead Offshore Developer, lead a team of 4
+                \item Description: Managed overall offshore delivery, and produced planning and design documents. Developed integrations connecting 10+ systems to run on daily batches and real-time frequencies using Dell Boomi Integration platform as a middleware.
+            \end{itemize}
+        \end{itemize}
+        
+        \begin{itemize}
+            \item \textbf{Learning and Development Reporting (for an Indian Telecom Company)} (04/2019 - 04/2020):
+            \begin{itemize}
+                \item Role: Lead Developer, lead a team of 2
+                \item Description: The project delivered a Power BI dashboard showing learning and development progress and metrics on the entire company. This solution is built to automatically pull the data from the company's various learning platforms, transformed and stored into Azure SQL Database. The data pipelines were built upon API and Selenium-based scheduled jobs.
+            \end{itemize}
+        \end{itemize}
+        
+    \end{rSection}
+    
+    %----------------------------------------------------------------------------------------
+    %   Academic Research
+    %----------------------------------------------------------------------------------------
+    
+    %----------------------------------------------------------------------------------------
+    % Certifications
+    %----------------------------------------------------------------------------------------
+    
+    \tableEnv{Certifications}{
+        \entry{}{Azure Fundamentals (AZ-900) (01/2021 - Present), Azure Developer Associate (AZ-204) (02/2021 - 02/2023), Azure Data Fundamentals (DP-900) (01/2021 - Present), Intermediate Python for Data Science Course (08/2018 - Present)}
+    }
+    
+    
+    %----------------------------------------------------------------------------------------
+    %   Awards \& Leadership
+    %----------------------------------------------------------------------------------------
+    
+    \begin{rSection}{Awards \& Leadership}
+        \begin{itemize}
+            \item \textbf{Academic Excellence Award} (05/2023) - Gies College of Business: Awarded for attaining the highest score in the MS Business Analytics cohort
+            \item \textbf{Beta Gamma Sigma Lifetime Member} (05/2023) - CH-34C-3046335: BGS recognizes and honors the top 10\% of undergraduate students, the top 20\% of graduate students, and all doctoral candidates from around the world in business schools accredited by The Association to Advance Collegiate Schools of Business
+            \item \textbf{Member of Jury, Manipal National Hackathon (DoIT)} (2020): Mentored and evaluated innovative projects presented by tech students from all over India in the 24Hr hackathon organised by Department of IT Rajasthan Gov and Manipal University
+            \item \textbf{Mentor and Judge, JECRC Hackathon 4.0} (2020): Mentored and evaluated innovative projects presented by tech students from all over India in the 24Hr hackathon organised by JECRC College, Jaipur
+            \item \textbf{Multiple Expert Lectures at Manipal University and MNIT Jaipur} (2019 - 2020): Delivered multiple expert lectures on Cloud Services, Serverless computation and Modern API Design
+            \item \textbf{Finalist, TCS Inframind} (2019): Got to the final round and Pre Placement offer from Tata Consultancy Services for IaaS design competition
+            \item \textbf{Finalist HackWithInfy} (2018): Made it to the top 100 programmers nationwide after clearing two rounds of programming challenges conducted online by Infosys
+            \item \textbf{CSE Department Representative} (2017): Selected as department representative and presented the annual report of Department of Computer Engineering on the occasion of first ever Department Day
+        \end{itemize}
+    \end{rSection}
+    
+\end{document}
