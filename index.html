@@ -4,365 +4,303 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Bhutoria - Assistant Vice President</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="yb.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #000000;
-            color: #00ff00;
-            font-family: 'Courier New', monospace;
-            font-size: 16px;
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .terminal-header {
-            border: 2px solid #00ff00;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 30px;
-            background: rgba(0, 255, 0, 0.05);
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
-        }
-
-        .terminal-bar {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .terminal-dots {
-            display: flex;
-            gap: 5px;
-            margin-right: 15px;
-        }
-
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .dot.red { background: #ff5f56; }
-        .dot.yellow { background: #ffbd2e; }
-        .dot.green { background: #27ca3f; }
-
-        .terminal-title {
-            color: #00ff00;
-            font-size: 16px;
-        }
-
+        /* Profile-specific styles */
         .profile-section {
             display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
+            grid-template-columns: 160px 1fr;
+            gap: var(--yb-space-8);
             align-items: start;
+            padding: var(--yb-space-12) 0;
         }
 
         .profile-image {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
-            border: 3px solid #00ff00;
-            box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+            border: 2px solid var(--yb-border);
             object-fit: cover;
-            transition: all 0.3s ease;
+            transition: border-color var(--yb-transition);
         }
 
         .profile-image:hover {
-            box-shadow: 0 0 50px rgba(0, 255, 0, 0.8), 0 0 100px rgba(0, 255, 0, 0.4);
-            border-color: #00ff00;
-            transform: scale(1.05);
+            border-color: var(--yb-border-hover);
         }
 
         .profile-info h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px #00ff00;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 10px #00ff00; }
-            to { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+            font-size: var(--yb-text-3xl);
+            font-weight: 300;
+            margin-bottom: var(--yb-space-2);
+            letter-spacing: -0.03em;
         }
 
         .profile-info h2 {
-            font-size: 1.5em;
-            color: #00cc00;
-            margin-bottom: 15px;
+            font-size: var(--yb-text-lg);
+            font-weight: 400;
+            color: var(--yb-text-muted);
+            margin-bottom: var(--yb-space-6);
         }
 
-        .contact-info {
-            margin-top: 20px;
+        .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--yb-space-4);
         }
 
         .contact-item {
-            margin-bottom: 10px;
-            color: #00cc00;
-            font-size: 1.1em;
+            font-size: var(--yb-text-sm);
+            color: var(--yb-text-muted);
         }
 
         .contact-item a {
-            color: #00ff00;
-            text-decoration: none;
-            transition: all 0.3s ease;
+            color: var(--yb-text);
+            border-bottom: 1px solid var(--yb-gray-600);
         }
 
         .contact-item a:hover {
-            text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
-            color: #00ff00;
-            transform: scale(1.05);
+            border-color: var(--yb-text);
         }
 
-        .section {
-            margin-bottom: 40px;
-            border: 1px solid #00ff00;
-            border-radius: 8px;
-            padding: 25px;
-            background: rgba(0, 255, 0, 0.02);
-            position: relative;
-            transition: all 0.3s ease;
+        /* Section styling */
+        .content-section {
+            margin-bottom: var(--yb-space-12);
         }
 
-        .section:hover {
-            border-color: #00ff00;
-            box-shadow: 0 0 30px rgba(0, 255, 0, 0.4), inset 0 0 10px rgba(0, 255, 0, 0.1);
-            transform: translateY(-2px);
-            background: rgba(0, 255, 0, 0.05);
+        .section-title {
+            font-family: var(--yb-font-mono);
+            font-size: var(--yb-text-xs);
+            font-weight: 500;
+            color: var(--yb-text-subtle);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--yb-space-6);
+            padding-bottom: var(--yb-space-3);
+            border-bottom: 1px solid var(--yb-border);
         }
 
-        .section::before {
-            content: attr(data-title);
-            position: absolute;
-            top: -12px;
-            left: 20px;
-            background: #000000;
-            padding: 0 10px;
-            color: #00ff00;
-            font-weight: bold;
-            font-size: 1.2em;
+        .summary-text {
+            font-size: var(--yb-text-base);
+            color: var(--yb-text-muted);
+            line-height: 1.7;
+            max-width: 800px;
         }
 
-        .section h3 {
-            color: #00ff00;
-            margin-bottom: 20px;
-            font-size: 1.4em;
-            border-bottom: 1px solid #00ff00;
-            padding-bottom: 10px;
-        }
-
-        .job, .project, .education-item {
-            margin-bottom: 25px;
-            padding: 15px;
-            border-left: 3px solid #00ff00;
-            background: rgba(0, 255, 0, 0.03);
-        }
-
-        .job-header, .project-header, .education-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-
-        .job-title, .project-title, .education-title {
-            font-weight: bold;
-            color: #00ff00;
-            font-size: 1.2em;
-        }
-
-        .company, .dates, .institution {
-            color: #00cc00;
-            font-size: 1em;
-        }
-
-        .location {
-            color: #00aa00;
-            font-size: 0.95em;
-            font-style: italic;
-        }
-
-        .description {
-            margin-top: 10px;
-            color: #00dd00;
-            font-size: 1.05em;
-        }
-
-        .description ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .description li {
-            margin-bottom: 5px;
-        }
-
+        /* Skills grid */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--yb-space-4);
         }
 
         .skill-category {
-            padding: 15px;
-            border: 1px solid #00aa00;
-            border-radius: 5px;
-            background: rgba(0, 255, 0, 0.02);
+            background: var(--yb-bg-elevated);
+            border: 1px solid var(--yb-border);
+            border-radius: var(--yb-radius-md);
+            padding: var(--yb-space-4);
         }
 
         .skill-category h4 {
-            color: #00ff00;
-            margin-bottom: 10px;
-            font-size: 1.1em;
+            font-family: var(--yb-font-mono);
+            font-size: var(--yb-text-xs);
+            font-weight: 500;
+            color: var(--yb-text-subtle);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--yb-space-3);
         }
 
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: var(--yb-space-2);
         }
 
         .skill-tag {
-            background: rgba(0, 255, 0, 0.1);
-            border: 1px solid #00aa00;
-            color: #00cc00;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 0.95em;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            font-family: var(--yb-font-mono);
+            font-size: var(--yb-text-xs);
+            color: var(--yb-text-muted);
+            background: var(--yb-bg-surface);
+            padding: var(--yb-space-1) var(--yb-space-2);
+            border-radius: var(--yb-radius-sm);
+            transition: color var(--yb-transition);
         }
 
         .skill-tag:hover {
-            background: rgba(0, 255, 0, 0.3);
-            border-color: #00ff00;
-            color: #00ff00;
-            transform: translateY(-2px);
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.6), 0 4px 8px rgba(0, 255, 0, 0.4);
-            text-shadow: 0 0 10px #00ff00;
+            color: var(--yb-text);
         }
 
-        .typing-effect {
-            overflow: hidden;
-            border-right: 2px solid #00ff00;
+        /* Experience items */
+        .experience-item {
+            padding: var(--yb-space-6);
+            background: var(--yb-bg-elevated);
+            border: 1px solid var(--yb-border);
+            border-radius: var(--yb-radius-md);
+            margin-bottom: var(--yb-space-4);
+            transition: border-color var(--yb-transition);
+        }
+
+        .experience-item:hover {
+            border-color: var(--yb-border-hover);
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--yb-space-4);
+            margin-bottom: var(--yb-space-3);
+        }
+
+        .experience-title {
+            font-size: var(--yb-text-lg);
+            font-weight: 500;
+            color: var(--yb-text);
+            margin-bottom: var(--yb-space-1);
+        }
+
+        .experience-company {
+            font-size: var(--yb-text-sm);
+            color: var(--yb-text-muted);
+        }
+
+        .experience-location {
+            font-size: var(--yb-text-sm);
+            color: var(--yb-text-subtle);
+        }
+
+        .experience-dates {
+            font-family: var(--yb-font-mono);
+            font-size: var(--yb-text-xs);
+            color: var(--yb-text-subtle);
             white-space: nowrap;
-            animation: typing 3s steps(50), blink-caret 0.5s step-end infinite;
         }
 
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+        .experience-description {
+            margin-top: var(--yb-space-4);
         }
 
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: #00ff00; }
+        .experience-description ul {
+            margin: 0;
+            padding-left: var(--yb-space-4);
         }
 
-        .matrix-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.15;
-            pointer-events: none;
+        .experience-description li {
+            font-size: var(--yb-text-sm);
+            color: var(--yb-text-muted);
+            margin-bottom: var(--yb-space-2);
+            line-height: 1.6;
         }
 
-        @media (max-width: 768px) {
+        .experience-description li:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-description p {
+            font-size: var(--yb-text-sm);
+            color: var(--yb-text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Awards list */
+        .awards-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .awards-list li {
+            padding: var(--yb-space-4);
+            background: var(--yb-bg-elevated);
+            border: 1px solid var(--yb-border);
+            border-radius: var(--yb-radius-md);
+            margin-bottom: var(--yb-space-3);
+            font-size: var(--yb-text-sm);
+            color: var(--yb-text-muted);
+            transition: border-color var(--yb-transition);
+        }
+
+        .awards-list li:hover {
+            border-color: var(--yb-border-hover);
+        }
+
+        .awards-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .awards-list strong {
+            color: var(--yb-text);
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
             .profile-section {
                 grid-template-columns: 1fr;
                 text-align: center;
-                gap: 20px;
+                gap: var(--yb-space-6);
             }
 
             .profile-image {
                 margin: 0 auto;
+                width: 140px;
+                height: 140px;
             }
 
-            .profile-info h1 {
-                font-size: 2em;
+            .contact-list {
+                justify-content: center;
             }
 
-            .job-header, .project-header, .education-header {
+            .experience-header {
                 flex-direction: column;
                 align-items: flex-start;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section {
-                padding: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-            }
-
-            .profile-info h1 {
-                font-size: 1.8em;
-            }
-
-            .profile-image {
-                width: 150px;
-                height: 150px;
             }
         }
     </style>
 </head>
-<body>
-    <canvas class="matrix-bg" id="matrix"></canvas>
-    
+<body class="yb">
     <div class="container">
-        <div class="terminal-header">
-            <div class="terminal-bar">
-                <div class="terminal-dots">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
-                </div>
-                <div class="terminal-title">yash@enterprise:~$ cat resume.txt</div>
+        <header class="header">
+            <div class="header-inner">
+                <a href="/" class="logo">Yash Bhutoria</a>
+                <nav class="nav">
+                    <a href="https://linkedin.com/in/yashbhutoria" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/yashbhutoria" target="_blank">GitHub</a>
+                    <a href="https://raw.githubusercontent.com/yashbhutoria/latex-resume/refs/heads/main/resume.pdf" class="btn btn-sm btn-ghost" target="_blank">Resume</a>
+                </nav>
             </div>
-        </div>
+        </header>
 
-        <div class="profile-section">
+        <section class="profile-section">
             <img src="img/profile.jpg" alt="Yash Bhutoria" class="profile-image">
             <div class="profile-info">
-                <h1 class="typing-effect">Yash Bhutoria</h1>
+                <h1>Yash Bhutoria</h1>
                 <h2>Assistant Vice President</h2>
-                <div class="contact-info">
-                    <div class="contact-item">📧 <a href="mailto:yash.bhutoria@celebaltech.com">yash.bhutoria@celebaltech.com</a></div>
-                    <div class="contact-item">📱 <a href="tel:+12172000330">+1-217-200-0330</a></div>
-                    <div class="contact-item">🔗 <a href="https://linkedin.com/in/yashbhutoria" target="_blank">linkedin.com/in/yashbhutoria</a></div>
-                    <div class="contact-item">📍 Dallas, TX</div>
-                    <div class="contact-item">📄 <a href="https://raw.githubusercontent.com/yashbhutoria/latex-resume/refs/heads/main/resume.pdf" target="_blank">Download Resume PDF</a></div>
+                <div class="contact-list">
+                    <span class="contact-item"><a href="mailto:yash.bhutoria@celebaltech.com">yash.bhutoria@celebaltech.com</a></span>
+                    <span class="contact-item"><a href="tel:+12172000330">+1-217-200-0330</a></span>
+                    <span class="contact-item">Dallas, TX</span>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section" data-title="PROFESSIONAL_SUMMARY">
-            <p>As Assistant Vice President at Celebal Technologies, I architect, develop, and manage robust and scalable enterprise-grade integration solutions on Azure Cloud Platform. I leverage my expertise in Azure PaaS, Data Engineering, and Serverless technologies to deliver value to clients across various domains, such as energy, sustainability, healthcare, and education.</p>
-        </div>
+        <hr class="divider">
 
-        <div class="section" data-title="TECHNICAL_SKILLS">
+        <section class="content-section">
+            <h3 class="section-title">Summary</h3>
+            <p class="summary-text">As Assistant Vice President at Celebal Technologies, I architect, develop, and manage robust and scalable enterprise-grade integration solutions on Azure Cloud Platform. I leverage my expertise in Azure PaaS, Data Engineering, and Serverless technologies to deliver value to clients across various domains, such as energy, sustainability, healthcare, and education.</p>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Technical Skills</h3>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h4>Programming</h4>
@@ -437,19 +375,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section" data-title="WORK_EXPERIENCE">
-            <div class="job">
-                <div class="job-header">
+        <section class="content-section">
+            <h3 class="section-title">Experience</h3>
+
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="job-title">Assistant Vice President - Application Development</div>
-                        <div class="company">Celebal Technologies Americas, Inc.</div>
-                        <div class="location">Dallas, TX</div>
+                        <div class="experience-title">Assistant Vice President - Application Development</div>
+                        <div class="experience-company">Celebal Technologies Americas, Inc.</div>
+                        <div class="experience-location">Dallas, TX</div>
                     </div>
-                    <div class="dates">01/2025 - Present</div>
+                    <div class="experience-dates">01/2025 - Present</div>
                 </div>
-                <div class="description">
+                <div class="experience-description">
                     <ul>
                         <li>Handling the P&L as the HOD of Application Development department</li>
                         <li>Facilitating communication between technical teams and management personnel</li>
@@ -461,16 +401,16 @@
                 </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="job-title">Principal Consultant, Application Development</div>
-                        <div class="company">Celebal Technologies Americas, Inc.</div>
-                        <div class="location">Dallas, TX</div>
+                        <div class="experience-title">Principal Consultant, Application Development</div>
+                        <div class="experience-company">Celebal Technologies Americas, Inc.</div>
+                        <div class="experience-location">Dallas, TX</div>
                     </div>
-                    <div class="dates">05/2023 - 01/2025</div>
+                    <div class="experience-dates">05/2023 - 01/2025</div>
                 </div>
-                <div class="description">
+                <div class="experience-description">
                     <ul>
                         <li>Handling the P&L as the HOD of Application Development department</li>
                         <li>Drafted proposals outlining project scope, timeline, deliverables and cost estimates</li>
@@ -481,16 +421,16 @@
                 </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="job-title">Graduate Research Assistant</div>
-                        <div class="company">Gies College of Business - University of Illinois Urbana-Champaign</div>
-                        <div class="location">Champaign, IL</div>
+                        <div class="experience-title">Graduate Research Assistant</div>
+                        <div class="experience-company">Gies College of Business - University of Illinois Urbana-Champaign</div>
+                        <div class="experience-location">Champaign, IL</div>
                     </div>
-                    <div class="dates">10/2022 - 05/2023</div>
+                    <div class="experience-dates">10/2022 - 05/2023</div>
                 </div>
-                <div class="description">
+                <div class="experience-description">
                     <ul>
                         <li>Evaluated public datasets for Filecoin/IPFS storage suitability</li>
                         <li>Demonstrated decentralized computing use case over data</li>
@@ -499,16 +439,16 @@
                 </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="job-title">Member of Technical Staff, Enterprise Integration</div>
-                        <div class="company">Celebal Technologies Pvt. Ltd.</div>
-                        <div class="location">Jaipur, India</div>
+                        <div class="experience-title">Member of Technical Staff, Enterprise Integration</div>
+                        <div class="experience-company">Celebal Technologies Pvt. Ltd.</div>
+                        <div class="experience-location">Jaipur, India</div>
                     </div>
-                    <div class="dates">05/2019 - 07/2022</div>
+                    <div class="experience-dates">05/2019 - 07/2022</div>
                 </div>
-                <div class="description">
+                <div class="experience-description">
                     <ul>
                         <li>Architecting and developing data integration solutions on Azure and GCP</li>
                         <li>Managing delivery for high value clients</li>
@@ -518,16 +458,16 @@
                 </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="job-title">Associate Data Engineer</div>
-                        <div class="company">Celebal Technologies</div>
-                        <div class="location">Jaipur, India</div>
+                        <div class="experience-title">Associate Data Engineer</div>
+                        <div class="experience-company">Celebal Technologies</div>
+                        <div class="experience-location">Jaipur, India</div>
                     </div>
-                    <div class="dates">10/2017 - 04/2019</div>
+                    <div class="experience-dates">10/2017 - 04/2019</div>
                 </div>
-                <div class="description">
+                <div class="experience-description">
                     <ul>
                         <li>Integrating data, performing ETL</li>
                         <li>Processing and Modelling Data into OLAP Models</li>
@@ -536,199 +476,140 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section" data-title="PROJECTS">
-            <div class="project">
-                <div class="project-header">
+        <section class="content-section">
+            <h3 class="section-title">Projects</h3>
+
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="project-title">Integration Modernization (Snacks Manufacturer)</div>
-                        <div class="company">Lead Delivery Manager & Architect</div>
+                        <div class="experience-title">Integration Modernization (Snacks Manufacturer)</div>
+                        <div class="experience-company">Lead Delivery Manager & Architect</div>
                     </div>
-                    <div class="dates">09/2023 - Present</div>
+                    <div class="experience-dates">09/2023 - Present</div>
                 </div>
-                <div class="description">
-                    Established new and improved IT processes, standards and framework to streamline the operational efficiency of the customer. Leading delivery across 5+ concurrent projects with comprehensive architectural oversight.
+                <div class="experience-description">
+                    <p>Established new and improved IT processes, standards and framework to streamline the operational efficiency of the customer. Leading delivery across 5+ concurrent projects with comprehensive architectural oversight.</p>
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="project-title">IPaaS on Azure (Hospitality Company, San Diego)</div>
-                        <div class="company">Lead Offshore Developer, Team of 8</div>
+                        <div class="experience-title">IPaaS on Azure (Hospitality Company, San Diego)</div>
+                        <div class="experience-company">Lead Offshore Developer, Team of 8</div>
                     </div>
-                    <div class="dates">09/2019 - 07/2022</div>
+                    <div class="experience-dates">09/2019 - 07/2022</div>
                 </div>
-                <div class="description">
-                    Designed and developed an integration platform on Azure using C# serverless functions, API Gateway, and Cloud workflows. Implemented Infrastructure as Code and CI/CD pipelines for seamless deployment and scalability.
+                <div class="experience-description">
+                    <p>Designed and developed an integration platform on Azure using C# serverless functions, API Gateway, and Cloud workflows. Implemented Infrastructure as Code and CI/CD pipelines for seamless deployment and scalability.</p>
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="project-title">Data Landscape Modernization (Illinois Motorparts Manufacturer)</div>
-                        <div class="company">Architect and Lead Developer, Team of 6</div>
+                        <div class="experience-title">Data Landscape Modernization (Illinois Motorparts Manufacturer)</div>
+                        <div class="experience-company">Architect and Lead Developer, Team of 6</div>
                     </div>
-                    <div class="dates">04/2021 - 04/2022</div>
+                    <div class="experience-dates">04/2021 - 04/2022</div>
                 </div>
-                <div class="description">
-                    Modernized data ingestion landscape by implementing robust data pipelines between SAP S/4 and Salesforce using Azure Data Factory. Streamlined data flow and improved operational efficiency.
+                <div class="experience-description">
+                    <p>Modernized data ingestion landscape by implementing robust data pipelines between SAP S/4 and Salesforce using Azure Data Factory. Streamlined data flow and improved operational efficiency.</p>
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="project-title">Data Landscape Modernization (Medical Imaging Device Manufacturer)</div>
-                        <div class="company">Architect and Lead Developer, Team of 6</div>
+                        <div class="experience-title">Data Landscape Modernization (Medical Imaging Device Manufacturer)</div>
+                        <div class="experience-company">Architect and Lead Developer, Team of 6</div>
                     </div>
-                    <div class="dates">10/2020 - 05/2022</div>
+                    <div class="experience-dates">10/2020 - 05/2022</div>
                 </div>
-                <div class="description">
-                    Modernized customer's data landscape by migrating to Azure SQL Database with serverless architecture. Implemented comprehensive DevOps practices using Azure DevOps for enhanced reliability and scalability.
+                <div class="experience-description">
+                    <p>Modernized customer's data landscape by migrating to Azure SQL Database with serverless architecture. Implemented comprehensive DevOps practices using Azure DevOps for enhanced reliability and scalability.</p>
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="project-title">Data Integration on Dell Boomi (Global Sports Brand)</div>
-                        <div class="company">Lead Offshore Developer, Team of 4</div>
+                        <div class="experience-title">Data Integration on Dell Boomi (Global Sports Brand)</div>
+                        <div class="experience-company">Lead Offshore Developer, Team of 4</div>
                     </div>
-                    <div class="dates">05/2020 - 08/2020</div>
+                    <div class="experience-dates">05/2020 - 08/2020</div>
                 </div>
-                <div class="description">
-                    Developed comprehensive integrations connecting 10+ systems using Dell Boomi platform. Ensured seamless data flow across diverse enterprise systems for improved operational visibility.
+                <div class="experience-description">
+                    <p>Developed comprehensive integrations connecting 10+ systems using Dell Boomi platform. Ensured seamless data flow across diverse enterprise systems for improved operational visibility.</p>
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="project-title">Learning and Development Reporting (Indian Telecom Company)</div>
-                        <div class="company">Lead Developer, Team of 2</div>
+                        <div class="experience-title">Learning and Development Reporting (Indian Telecom Company)</div>
+                        <div class="experience-company">Lead Developer, Team of 2</div>
                     </div>
-                    <div class="dates">04/2019 - 04/2020</div>
+                    <div class="experience-dates">04/2019 - 04/2020</div>
                 </div>
-                <div class="description">
-                    Delivered comprehensive Power BI dashboard showcasing learning and development progress. Utilized Azure SQL Database, custom APIs, and Selenium for automated data collection and visualization.
+                <div class="experience-description">
+                    <p>Delivered comprehensive Power BI dashboard showcasing learning and development progress. Utilized Azure SQL Database, custom APIs, and Selenium for automated data collection and visualization.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section" data-title="EDUCATION">
-            <div class="education-item">
-                <div class="education-header">
+        <section class="content-section">
+            <h3 class="section-title">Education</h3>
+
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="education-title">Master of Science in Business Analytics</div>
-                        <div class="institution">University of Illinois Urbana-Champaign</div>
-                        <div class="location">Gies College of Business, Champaign, IL</div>
+                        <div class="experience-title">Master of Science in Business Analytics</div>
+                        <div class="experience-company">University of Illinois Urbana-Champaign</div>
+                        <div class="experience-location">Gies College of Business, Champaign, IL</div>
                     </div>
-                    <div class="dates">07/2022 - 05/2023</div>
+                    <div class="experience-dates">07/2022 - 05/2023</div>
                 </div>
-                <div class="description">Graduated with Beta Gamma Sigma honor</div>
+                <div class="experience-description">
+                    <p>Graduated with Beta Gamma Sigma honor</p>
+                </div>
             </div>
 
-            <div class="education-item">
-                <div class="education-header">
+            <div class="experience-item">
+                <div class="experience-header">
                     <div>
-                        <div class="education-title">Bachelor of Technology in Computer Science</div>
-                        <div class="institution">Rajasthan Technical University</div>
-                        <div class="location">Poornima College of Engineering, Jaipur, India</div>
+                        <div class="experience-title">Bachelor of Technology in Computer Science</div>
+                        <div class="experience-company">Rajasthan Technical University</div>
+                        <div class="experience-location">Poornima College of Engineering, Jaipur, India</div>
                     </div>
-                    <div class="dates">07/2015 - 05/2019</div>
+                    <div class="experience-dates">07/2015 - 05/2019</div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section" data-title="AWARDS_&_LEADERSHIP">
-            <div class="description">
-                <ul>
-                    <li><strong>Academic Excellence Award</strong> (05/2023) - Gies College of Business: Awarded for attaining the highest score in the MS Business Analytics cohort</li>
-                    <li><strong>Beta Gamma Sigma Lifetime Member</strong> (05/2023) - BGS recognizes the top 10% of undergraduate students and top 20% of graduate students</li>
-                    <li><strong>Member of Jury, Manipal National Hackathon</strong> (2020): Mentored and evaluated innovative projects in 24Hr hackathon</li>
-                    <li><strong>Expert Lectures at Manipal University and MNIT Jaipur</strong> (2019-2020): Delivered lectures on Cloud Services and Serverless computation</li>
-                    <li><strong>Finalist, TCS Inframind</strong> (2019): IaaS design competition with Pre Placement offer</li>
-                    <li><strong>Finalist HackWithInfy</strong> (2018): Top 100 programmers nationwide by Infosys</li>
-                </ul>
+        <section class="content-section">
+            <h3 class="section-title">Awards & Leadership</h3>
+            <ul class="awards-list">
+                <li><strong>Academic Excellence Award</strong> (05/2023) - Gies College of Business: Awarded for attaining the highest score in the MS Business Analytics cohort</li>
+                <li><strong>Beta Gamma Sigma Lifetime Member</strong> (05/2023) - BGS recognizes the top 10% of undergraduate students and top 20% of graduate students</li>
+                <li><strong>Member of Jury, Manipal National Hackathon</strong> (2020): Mentored and evaluated innovative projects in 24Hr hackathon</li>
+                <li><strong>Expert Lectures at Manipal University and MNIT Jaipur</strong> (2019-2020): Delivered lectures on Cloud Services and Serverless computation</li>
+                <li><strong>Finalist, TCS Inframind</strong> (2019): IaaS design competition with Pre Placement offer</li>
+                <li><strong>Finalist HackWithInfy</strong> (2018): Top 100 programmers nationwide by Infosys</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <span>Yash Bhutoria</span>
+                <span class="status">
+                    <span class="status-dot active"></span>
+                    Available for opportunities
+                </span>
             </div>
-        </div>
+        </footer>
     </div>
-
-    <script>
-        // Matrix rain effect
-        const canvas = document.getElementById('matrix');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
-        const matrixArray = matrix.split("");
-
-        const fontSize = 10;
-        const columns = canvas.width / fontSize;
-
-        const drops = [];
-        for(let x = 0; x < columns; x++) {
-            drops[x] = 1;
-        }
-
-        function draw() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            ctx.font = fontSize + 'px monospace';
-
-            for(let i = 0; i < drops.length; i++) {
-                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
-                
-                // Create fading effect from bright to dim
-                const opacity = (canvas.height - drops[i] * fontSize) / canvas.height;
-                ctx.fillStyle = `rgba(0, 255, 0, ${Math.max(0.1, opacity)})`;
-                
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(draw, 35);
-
-        // Resize canvas on window resize
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            // Recalculate columns and drops for new canvas size
-            const newColumns = canvas.width / fontSize;
-            drops.length = 0;
-            for(let x = 0; x < newColumns; x++) {
-                drops[x] = Math.floor(Math.random() * canvas.height / fontSize);
-            }
-        });
-
-        // Terminal typing effect for the profile name
-        const nameElement = document.querySelector('.typing-effect');
-        const originalText = nameElement.textContent;
-        nameElement.textContent = '';
-        
-        let i = 0;
-        function typeWriter() {
-            if (i < originalText.length) {
-                nameElement.textContent += originalText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            } else {
-                nameElement.style.borderRight = 'none';
-            }
-        }
-        
-        setTimeout(typeWriter, 1000);
-    </script>
 </body>
 </html>
